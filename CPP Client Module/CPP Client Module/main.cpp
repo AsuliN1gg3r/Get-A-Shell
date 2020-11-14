@@ -9,16 +9,17 @@
 int main(void)
 {
 
-	/*try
+	try
 	{
 		WSAInitializer wsaInit;
 		Communicator c1;
 		c1.connectToServer(8876, "127.0.0.1");
+		c1.sendMsg("Testing BlaBla...");
 	}
 	catch (std::exception& e)
 	{
 		std::cout << "Error occured: " << e.what() << std::endl;
-	}*/
+	}
 
 	system("PAUSE");
 	return 0;

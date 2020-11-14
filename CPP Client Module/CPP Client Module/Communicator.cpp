@@ -32,12 +32,12 @@ bool Communicator::connectToServer(int PortNo, std::string IPAddress)
 	target.sin_addr.s_addr = inet_addr(IPAddress.c_str());
 
 	// Connecting to Server
-	if (connect(this->_sock, (sockaddr*)&target, sizeof(target)) == SOCKET_ERROR)
-	{
-		return false; // Failure
-	}
+	return connect(this->_sock, (sockaddr*)&target, sizeof(target)) != SOCKET_ERROR;
+}
 
-	return true; // Success
+bool Communicator::sendMsg(std::string msg)
+{
+	return send(this->_sock, msg.c_str(), msg.size(), 0) != SOCKET_ERROR;
 }
 
 

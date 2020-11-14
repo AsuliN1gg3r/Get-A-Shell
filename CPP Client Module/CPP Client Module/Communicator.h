@@ -13,4 +13,6 @@ public:
 	Communicator();
 	~Communicator();
 	bool connectToServer(int PortNo, std::string IPAddress);
+	bool sendMsg(std::string msg);
+
 };
