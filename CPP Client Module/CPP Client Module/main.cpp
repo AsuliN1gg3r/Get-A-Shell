@@ -23,6 +23,12 @@ int main(void)
 	}*/
 	RSA rsa;
 
+    std::string s = "bla bla bla";
+    std::cout << s << std::endl;
+
+	int *enc = RSA::encrypt(rsa.getPublicKey(), s);
+    
+	std::cout << rsa.decrypt(enc) << std::endl;
 
 	system("PAUSE");
 	return 0;
