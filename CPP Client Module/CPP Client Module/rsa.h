@@ -8,15 +8,15 @@
 
 #define RAND_MIN 5
 #define RAND_MAX 180
+#define KEY_LENGTH 50
 
 class RSA
 {
-	long int _privateKey;
-	long int _publicKey;
-	long int _primeMul;
+	long int _privateKey[KEY_LENGTH];
+	long int _publicKey[KEY_LENGTH];
+	long int _primeMul; //n
 	bool _primeNumberCheck(int num);
 	int _randPrimeNumber();
-	int _gcd(int num1, int num2);
 
 public:
 	RSA();
