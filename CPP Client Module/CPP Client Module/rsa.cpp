@@ -1,116 +1,175 @@
-﻿#include "rsa.h"
+#include "rsa.h"
 
-// Prime number checker (Rabin Miller Algorithem)
-bool RSA::_rabinMiller(int n)
+// This function checks if a number is prime
+bool RSA::_primeNumberCheck(int num)
 {
-    bool ok = true;
-
-    for (int i = 1; i <= 5 && ok; i++) {
-        int a = rand() + 1;
-        int result = this->_logPower(a, n - 1, n);
-        ok &= (result == 1);
-    }
-
-    return ok;
-}
-
-int RSA::_logPower(int n, int p, int mod)
-{
-    int result = 1;
-    for (; p; p >>= 1)
+    int max = sqrt(num);
+    for (int i = 2; i <= max; i++)
     {
-        if (p & 1)
-            result = (1LL * result * n) % mod;
-        n = (1LL * n * n) % mod;
+        if (num % i == 0)
+        {
+            return false;
+        }
     }
-    return result;
+    return true;
 }
 
-int RSA::_gcd(int num1, int num2)
-{
-    while (num2)
+int RSA::_randPrimeNumber()
+{ 
+    int primeNumber = 0;
+    while (primeNumber % 2 == 0) // Rand odd number
     {
-        int r = num1 % num2;
-        num1 = num2;
-        num2 = r;
-    }
-    return num1;
-}
-
-int RSA::_generateCoprime(int num)
-{
-    int generated = rand() % LIMIT;
-    while (this->_gcd(num, generated) != 1)
-        generated = rand() % LIMIT;
-    return generated;
-}
-
-// Rand a prime number
-int RSA::_generatePrime()
-{
-    int generated = rand() % LIMIT;
-    while (!this->_rabinMiller(generated))
-        generated = rand() % LIMIT;
-    return generated;
-}
-
-std::pair<int, int> RSA::_euclidExtended(int a, int b)
-{
-    if (!b) {
-        return { 1, 0 };
+        primeNumber = rand() % RAND_MAX + RAND_MIN;
     }
 
-    auto result = this->_euclidExtended(b, a % b);
-    return { result.second, result.first - (a / b) * result.second };
+    while (!this->_primeNumberCheck(primeNumber)) // Search for prime number
+    {
+        primeNumber += 2;
+    }
+
+    return primeNumber;
 }
 
-int RSA::_modularInverse(int n, int mod)
+long int cd(long int a, long int phi)
 {
-    int inverse = this->_euclidExtended(n, mod).first;
-    while (inverse < 0)
-        inverse += mod;
-    return inverse;
+    long int k = 1;
+    while (1)
+    {
+        k = k + phi;
+        if (k % a == 0)
+            return(k / a);
+    }
 }
-
 
 RSA::RSA()
 {
     srand(time(NULL));
 
-    int prime1 = this->_generatePrime(), prime2 = this->_generatePrime();
-    int n = prime1 * prime2;
-    int phi = (prime1 - 1) * (prime2 - 1);
+    int prime1 = 7, prime2 = 13; // this->_randPrimeNumber(), prime2 = this->_randPrimeNumber();
+    this->_primeMul = prime1 * prime2;
+    long int phi = (prime1 - 1) * (prime2 - 1); 
 
-    // Generate public key {e} [coprime to ø(n) and 1 < e < ø(n)]
-    int e = this->_generateCoprime(phi);
-    this->_publicKey = std::make_pair(e, n);
+    // Calculating keys
+    int k = 0;
+    for (int i = 2; i < phi; i++)
+    {
+        if (phi % i == 0)
+        {
+            continue;
+        }
+        if (this->_primeNumberCheck(i) && i != prime1 && i != prime2)
+        {
+            this->_publicKey = i;
+            if (cd(_publicKey, phi) > 0)
+            {
+                _privateKey = cd(_publicKey, phi);
+                break;
+            }
+        }
+        
+    }
+
+    std::cout << _publicKey << "\t" << _privateKey << std::endl;
+
+    // encrypt
+    /*long int temp[50];
+    char m[] = "abcdefg", en[50];
+    long int pt, ct, key = _publicKey[0];
+    int len = strlen(m);
+    int i = 0;
+    while (i != len)
+    {
+        pt = m[i];
+        pt -= 96;
+        k = 1;
+        for (int j = 0; j < key; j++)
+        {
+            k = k * pt;
+            k = k % _primeMul;
+        }
+
+        temp[i] = k;
+        ct = k + 96;
+        en[i] = ct;
+        i++;
+    }
+    en[i] = -1;*/
+
+    std::cout << "\n\nTHE ENCRYPTED MESSAGE IS\n";
+    std::string encoded = encrypt(this->_publicKey, this->_primeMul, "C");
+    std::cout << encoded << std::endl;
+
+    decode(encoded);
+    // decrypt
+    /*char m[9];
+    long int temp[50];
+    long int pt, ct;
+    long int key = _privateKey;
+    int i = 0;
     
-    //Generate private key {d}
-    int d = this->_modularInverse(e, phi);
-    this->_privateKey = std::make_pair(d, n); 
+    while (encoded[i] != -1)
+    {
+        ct = temp[i];
+        k = 1;
+        for (int j = 0; j < key; j++)
+        {
+            k = k * ct;
+            k = k % _primeMul;
+        }
+        pt = k + 96;
+        m[i] = pt;
+        i++;
+    }
+    m[i] = -1;
+    std::cout << "\n\nTHE DECRYPTED MESSAGE IS\n";
+    for (i = 0; m[i] != -1; i++)
+        std::cout << m[i];
+
+    std::cout << std::endl;*/
 }
 
-// Decrypt encoded bytes
-std::string RSA::decrypt(int* encodedMsg)
+long int RSA::getPublicKey()
 {
-    std::string decryptedMsg = "";
-
-    for (int i = 0; encodedMsg[i] != -1; i++)
-    {
-        decryptedMsg += (char)this->_logPower(encodedMsg[i], this->_privateKey.first, this->_privateKey.second);
-    }
-
-    return decryptedMsg;
+    return this->_publicKey;
 }
 
-// Encrypt a string
-int* RSA::encrypt(std::pair<int, int> publicKey, std::string msg)
+std::string RSA::decode(std::string encodedMsg)
 {
-    int* encodedMsg = new int[msg.length() + 1];
-    for (int i = 0; i < msg.length(); i++)
+    int* temp = new int[encodedMsg.length()];
+    std::string decodedMsg = "";
+
+    long double power = pow(encodedMsg[0], _privateKey);
+    std::cout << power << std::endl;
+    std::cout << char((fmod(power, _primeMul)))<< std::endl;
+
+    return std::string();
+}
+
+std::string RSA::encrypt(long int publicKey, long int primeMul, std::string msg)
+{
+    const char* msgChar = new char[msg.length()];
+    int* temp = new int[msg.length()];
+    std::string encodedMsg = "";
+    msgChar = msg.c_str();
+    long int pt, ct, k;
+    
+    /*for (int i = 0; i < msg.length(); i++)
     {
-        encodedMsg[i] = RSA::_logPower(msg[i], publicKey.first, publicKey.second);
+        pt = msgChar[i];
+        pt -= 96;
+        k = 1;
+        for (int j = 0; j < publicKey; j++)
+        {
+            k = k * pt;
+            k = k % primeMul;
+        }
+        temp[i] = k;
+        ct = k + 96;
+        encodedMsg += ct;
     }
-    encodedMsg[msg.length()] = -1; // End of data- used for decryption
+    encodedMsg += -1;*/
+    long double power = pow(msg[0], publicKey);
+    encodedMsg += fmod(power, primeMul);
+
     return encodedMsg;
 }
