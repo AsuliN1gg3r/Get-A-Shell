@@ -8,19 +8,18 @@
 
 #define RAND_MIN 5
 #define RAND_MAX 180
-#define KEY_LENGTH 50
 
 class RSA
 {
-	long int _privateKey[KEY_LENGTH];
-	long int _publicKey[KEY_LENGTH];
-	long int _primeMul; //n
+	long int _privateKey;
+	long int _publicKey;
+	long int _primeMul; 
 	bool _primeNumberCheck(int num);
 	int _randPrimeNumber();
 
 public:
 	RSA();
-	std::string getPublicKey();
-	std::string decode();
-	static std::string encrypt(std::string publicKey);
+	long int getPublicKey();
+	std::string decode(std::string encodedMsg);
+	static std::string encrypt(long int publicKey, long int primeMul, std::string msg);
 };
