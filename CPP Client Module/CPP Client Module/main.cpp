@@ -3,13 +3,14 @@
 #include <iostream>
 #include "Communicator.h"
 #include "WSAInitializer.h"
+#include "rsa.h"
 
 // For Testing Purpose
 
 int main(void)
 {
 
-	try
+	/*try
 	{
 		WSAInitializer wsaInit;
 		Communicator c1;
@@ -19,7 +20,9 @@ int main(void)
 	catch (std::exception& e)
 	{
 		std::cout << "Error occured: " << e.what() << std::endl;
-	}
+	}*/
+	RSA rsa;
+
 
 	system("PAUSE");
 	return 0;
