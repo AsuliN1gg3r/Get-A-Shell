@@ -1,3 +1,4 @@
+// Created by Eyal Asulin™
 #include "WSAInitializer.h"
 #include <exception>
 

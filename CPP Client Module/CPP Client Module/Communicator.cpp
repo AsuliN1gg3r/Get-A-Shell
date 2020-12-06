@@ -1,3 +1,4 @@
+// Created by Eyal Asulin™
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 
 #include "Communicator.h"

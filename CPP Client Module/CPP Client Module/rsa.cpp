@@ -1,6 +1,7 @@
-﻿#include "rsa.h"
+﻿// Created by Eyal Asulin™
+#include "rsa.h"
 
-// Prime number checker (Rabin Miller Algorithem)
+// Prime number checker (Rabin Miller Algorithm)
 bool RSA::_rabinMiller(int n)
 {
     bool ok = true;
