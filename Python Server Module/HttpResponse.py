@@ -16,13 +16,15 @@ class HttpResponse:
         # Generate Response Header
         header = str()
         if request_status == 200:
-            header += "HTTP/1.1 200 OK\n"
+            header += "HTTP/1.1 200 OK\r\n"
         elif request_status == 404:
-            header += "HTTP/1.1 404 Not Found\n"
+            header += "HTTP/1.1 404 Not Found\r\n"
         time_now = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
-        header += 'Date: {now}\n'.format(now=time_now)
+        header += 'Date: {now}\r\n'.format(now=time_now)
         header += 'Server: Microsoft Update Services Server\n'
-        header += 'Connection: close\n\n'
+        header += "Content-type: text/html\r\n"
+        header += "Content-Length: " + str(len(content)) + "\r\n"
+        header += 'Connection: close\r\n\r\n'
 
         return header + content
 

@@ -24,7 +24,8 @@ class Communicator:
         while True:
             self.__sock.listen()
             client, addr = self.__sock.accept()
-            threading.Thread(target=self.__handle_new_client, args=(client, addr)).start()
+            #threading.Thread(target=self.__handle_new_client, args=(client, addr)).start()
+            self.__handle_new_client(client, addr)
 
     @staticmethod
     def read_whole_socket(sock):
@@ -55,7 +56,7 @@ class Communicator:
         data = self.read_whole_socket(client_sock)
         request = HttpRequest.parse_http_request(data)
         if request:
-            if HttpRequest.authentication_source(request):
+            if not HttpRequest.authentication_source(request):
                 print("[+] Authentication succeed ->", addr)
                 Handler.handle_shell_connection(client_sock, addr)
             else:

@@ -1,6 +1,9 @@
 # Created by Eyal Asulin™
 from RSA import RSA
 from Server import Server
+import threading
+import Database
+import time
 
 def main():
     """rsa = RSA()
@@ -11,7 +14,11 @@ def main():
     decrypted = rsa.decrypt(encrypted)
     print("Decrypted:", decrypted)"""
     server = Server()
-    server.run()
+    threading.Thread(target=server.run).start()
+    """time.sleep(20)
+    Database.client_lock.acquire()
+    con_cl = Database.connected_clients
+    Database.client_lock.release()"""
 
 
 if __name__ == "__main__":
