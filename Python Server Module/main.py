@@ -14,7 +14,7 @@ def main():
     decrypted = rsa.decrypt(encrypted)
     print("Decrypted:", decrypted)"""
     server = Server()
-    threading.Thread(target=server.run).start()
+    server.run()
     """time.sleep(20)
     Database.client_lock.acquire()
     con_cl = Database.connected_clients

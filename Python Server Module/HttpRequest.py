@@ -34,7 +34,8 @@ class HttpRequest:
         try:
             request_method = request.split(' ')[0]  # GET or POST
             request_path = request.split(' ')[1].split('?')[0]  # /<path>
-            request_headers, request_content = request.split('\r\n', 1)[1].split("\r\n\r\n")  # headers and content/params
+            # headers and content/params
+            request_headers, request_content = request.split('\r\n', 1)[1].split("\r\n\r\n")
             message = email.message_from_file(StringIO(request_headers))
             request_headers = dict(message.items())
             return HttpRequest(request_method, request_path, request_headers, request_content)
@@ -52,5 +53,4 @@ class HttpRequest:
         :rtype: bool
         """
         # TODO: REMOVE BEFORE PRODUCTION: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
-        # TODO: add referer auth
         return request.request_headers["User-Agent"] == os.environ['ShellUserAgent']
