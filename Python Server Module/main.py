@@ -1,9 +1,6 @@
 # Created by Eyal Asulin™
 from RSA import RSA
 from Server import Server
-import threading
-import Database
-import time
 
 def main():
     """rsa = RSA()
