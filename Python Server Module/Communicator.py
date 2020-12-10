@@ -54,7 +54,6 @@ class Communicator:
         data = self.read_whole_socket(client_sock)
         request = HttpRequest.parse_http_request(data)
         if request:
-            print(request.request_headers)
             if HttpRequest.authentication_source(request):
                 Handler.handle_approved_source(client_sock, addr, request)
             else:
