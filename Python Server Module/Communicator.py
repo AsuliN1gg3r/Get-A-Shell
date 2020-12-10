@@ -13,7 +13,6 @@ class Communicator:
         """
         self.__sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__sock.bind((host, port))
-        self.__threads = list()
         print("[+] Server started on port", port)
 
     def listen(self):
@@ -24,7 +23,7 @@ class Communicator:
         while True:
             self.__sock.listen()
             client, addr = self.__sock.accept()
-            threading.Thread(target=self.__handle_new_client, args=(client, addr)).start()
+            threading.Thread(target=self.__handle_request, args=(client, addr)).start()
 
     @staticmethod
     def read_whole_socket(sock):
@@ -43,7 +42,7 @@ class Communicator:
                 break
         return data.decode()
 
-    def __handle_new_client(self, client_sock, addr):
+    def __handle_request(self, client_sock, addr):
         """
         This function checking connection's authentication and routing for compatible handler
         :param client_sock: socket of client
