@@ -1,3 +1,4 @@
+// Created by Eyal Asulin™
 #pragma comment (lib, "ws2_32.lib")
 
 #include <iostream>
@@ -10,25 +11,25 @@
 int main(void)
 {
 
-	/*try
+	try
 	{
 		WSAInitializer wsaInit;
 		Communicator c1;
-		c1.connectToServer(8876, "127.0.0.1");
-		c1.sendMsg("Testing BlaBla...");
+		c1.connectToServer(443, "127.0.0.1");
+		c1.sendMsg("POST /test/demo_form.php HTTP/1.1\nHost: w3schools.com\nname1 = value1 & name2 = value2");
 	}
 	catch (std::exception& e)
 	{
 		std::cout << "Error occured: " << e.what() << std::endl;
-	}*/
-	RSA rsa;
+	}
+	/*RSA rsa;
 
     std::string s = "bla bla bla";
     std::cout << s << std::endl;
 
 	int *enc = RSA::encrypt(rsa.getPublicKey(), s);
     
-	std::cout << rsa.decrypt(enc) << std::endl;
+	std::cout << rsa.decrypt(enc) << std::endl;*/
 
 	system("PAUSE");
 	return 0;

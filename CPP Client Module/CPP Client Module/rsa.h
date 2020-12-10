@@ -1,9 +1,7 @@
+// Created by Eyal Asulin™
 #pragma once
 
 #include <iostream>
-#include <stdlib.h>
-#include <math.h>
-#include <algorithm>
 #include <time.h>
 
 #define LIMIT 10000
