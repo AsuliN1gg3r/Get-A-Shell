@@ -44,7 +44,7 @@ class Handler:
                 RuntimeDatabase.idle_connections[addr[0]] = Computer(addr[0], client_sock)
             RuntimeDatabase.idle_connections_lock.release()
 
-            Handler.handle_execute_command(addr[0])  # For Testing
+            # Handler.handle_execute_command(addr[0])  # For Testing
         if request.request_method == "POST":
             try:  # An other handler waiting for this request
                 session_id = request.request_headers['Cookie'].split("=")[1]
@@ -81,14 +81,14 @@ class Handler:
         client_socket = RuntimeDatabase.idle_connections[ip_address].sock
         RuntimeDatabase.idle_connections_lock.release()
         cookie_value = ''.join(random.choices(string.ascii_uppercase + string.digits, k=4))
-        client_socket.send(HttpResponse.generate_response(200, command, set_cookie="1").encode())
+        client_socket.send(HttpResponse.generate_response(200, command, set_cookie=cookie_value).encode())
         wait_event = threading.Event()
         RuntimeDatabase.post_request_events_lock.acquire()
-        RuntimeDatabase.post_request_events["1"] = wait_event
+        RuntimeDatabase.post_request_events[cookie_value] = wait_event
         RuntimeDatabase.post_request_events_lock.release()
         wait_event.wait()
         RuntimeDatabase.post_request_events_lock.acquire()
-        request = RuntimeDatabase.post_request_events["1"]
-        RuntimeDatabase.post_request_events.pop("1")
+        request = RuntimeDatabase.post_request_events[cookie_value]
+        RuntimeDatabase.post_request_events.pop(cookie_value)
         RuntimeDatabase.post_request_events_lock.release()
         print(request.request_content)

@@ -1,7 +1,9 @@
 import socket
 import threading
+
 from HttpRequest import HttpRequest
 from Handler import Handler
+from InteractiveShell import InteractiveShell
 
 
 class Communicator:
@@ -13,7 +15,7 @@ class Communicator:
         """
         self.__sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__sock.bind((host, port))
-        print("[+] Server started on port", port)
+        InteractiveShell.log_to_shell("[+] Server started on port " + str(port))
 
     def listen(self):
         """
@@ -40,7 +42,7 @@ class Communicator:
             data += part
             if len(part) < 1024:
                 break
-        return data.decode()
+        return data.decode(errors='ignore')
 
     def __handle_request(self, client_sock, addr):
         """
@@ -57,5 +59,5 @@ class Communicator:
             if HttpRequest.authentication_source(request):
                 Handler.handle_approved_source(client_sock, addr, request)
             else:
-                print("[-] Authentication failed ->", addr, "- redirect to Microsoft website")
+                InteractiveShell.log_to_shell("[-] Authentication failed -> " + str(addr) + " - redirect to Microsoft website")
                 Handler.handle_unknown_source(client_sock)

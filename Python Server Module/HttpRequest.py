@@ -35,7 +35,7 @@ class HttpRequest:
             request_method = request.split(' ')[0]  # GET or POST
             request_path = request.split(' ')[1].split('?')[0]  # /<path>
             # headers and content/params
-            request_headers, request_content = request.split('\r\n', 1)[1].split("\r\n\r\n")
+            request_headers, request_content = request.split('\r\n', 1)[1].split("\r\n\r\n", 1)
             message = email.message_from_file(StringIO(request_headers))
             request_headers = dict(message.items())
             return HttpRequest(request_method, request_path, request_headers, request_content)

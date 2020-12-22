@@ -1,6 +1,7 @@
 # Created by Eyal Asulin™
 from RSA import RSA
 from Server import Server
+from InteractiveShell import InteractiveShell
 
 def main():
     """rsa = RSA()
@@ -16,6 +17,7 @@ def main():
     Database.client_lock.acquire()
     con_cl = Database.connected_clients
     Database.client_lock.release()"""
+    InteractiveShell.start_shell()
 
 
 if __name__ == "__main__":

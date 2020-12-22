@@ -40,7 +40,7 @@ class HttpResponse:
         """
         header = str()
         header += HttpResponse.header_headline(request_status)
-        header += ('Set-Cookie: sessionId=' + set_cookie) if set_cookie else ''
+        header += ('Set-Cookie: sessionId=' + set_cookie + '\r\n') if set_cookie else ''
         header += HttpResponse.header_metadata(connection_mode)
         header += "Content-Length: " + str(len(content)) + "\r\n\r\n"
 
