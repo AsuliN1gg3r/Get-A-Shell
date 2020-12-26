@@ -1,5 +1,4 @@
 #include <iostream>
-#include <Windows.h>
 
 #include "System.h"
 #include "PrivilegeEscalation.h"
@@ -13,12 +12,11 @@ int main(int argc, char** argv)
 
 	// System Properties Configuration
 	System::setArguments(argc, argv);
-
 	System::setIsSystemAdmin(PrivilegeEscalation::systemAdminCheck());
-	std::cout << System::getIsSystemAdmin() << std::endl;
+
 	if (!(System::getIsSystemAdmin() || System::checkForArgument("d")))
 	{
-		// TODO: Privilege Escalation Running
+		PrivilegeEscalation::run();
 		std::cout << "privilege" << std::endl;
 	}
 

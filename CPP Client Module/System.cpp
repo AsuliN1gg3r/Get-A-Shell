@@ -21,3 +21,12 @@ const bool System::checkForArgument(std::string arg)
 	}
     return false;
 }
+
+// This function returns the required environment variable value
+const std::string System::getTempPath(void)
+{
+	TCHAR tcValue[MAX_PATH];
+	GetEnvironmentVariable(_T("TEMP"), tcValue, MAX_PATH);
+
+	return std::string(tcValue);
+}
