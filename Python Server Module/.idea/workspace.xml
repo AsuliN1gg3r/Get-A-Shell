@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20049ae0-9971-45de-a721-34fae5bb1c08" name="Default Changelist" comment="HTML rendering according to user agent">
+      <change afterPath="$PROJECT_DIR$/../Launcher/Launcher.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Launcher/Launcher.vcxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Launcher/Launcher.vcxproj.filters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Launcher/PrivilegeEscalation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Launcher/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kVRK7p0rGSCUnirlkwiozvFIvS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Handler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python Server Module" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Handler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RSA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python Server Module" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python Server Module" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Python Server Module" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Eyal Asulin\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.RSA" />
+      <item itemvalue="Python.Server" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Handler" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.Handler" />
+        <item itemvalue="Python.Server" />
+        <item itemvalue="Python.RSA" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20049ae0-9971-45de-a721-34fae5bb1c08" name="Default Changelist" comment="" />
+      <created>1605783705440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605783705440</updated>
+    </task>
+    <task id="LOCAL‎00001" summary="Translated functions for RSA encryption">
+      <created>1605827496961</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1605827496961</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="RSA{} class DONE">
+      <created>1605876426845</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1605876426845</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="HttpRequest{} class DONE">
+      <created>1607287223418</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1607287223418</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="HTML rendering according to user agent">
+      <created>1607296341800</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1607296341800</updated>
+    </task>
+    <task id="LOCAL‎00005" summary="current">
+      <created>1607299661669</created>
+      <option name="number" value="LOCAL‎00005" />
+      <option name="presentableId" value="LOCAL‎00005" />
+      <updated>1607299661669</updated>
+    </task>
+    <task id="LOCAL‎00006" summary="current">
+      <created>1607299672833</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1607299672833</updated>
+    </task>
+    <task id="LOCAL‎00007" summary="RuntimeDatabase DONE">
+      <created>1607470402231</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1607470402231</updated>
+    </task>
+    <task id="LOCAL‎00008" summary="basic shell with clients DONE">
+      <created>1607473004306</created>
+      <option name="number" value="LOCAL‎00008" />
+      <option name="presentableId" value="LOCAL‎00008" />
+      <updated>1607473004306</updated>
+    </task>
+    <task id="LOCAL‎00009" summary="Simple HTTP Shell DONE">
+      <created>1607617878410</created>
+      <option name="number" value="LOCAL‎00009" />
+      <option name="presentableId" value="LOCAL‎00009" />
+      <updated>1607617878410</updated>
+    </task>
+    <task id="LOCAL‎00010" summary="Simple HTTP Reverse Shell">
+      <created>1607618481916</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1607618481916</updated>
+    </task>
+    <task id="LOCAL‎00011" summary="Simple HTTP Reverse Shell">
+      <created>1607620162006</created>
+      <option name="number" value="LOCAL‎00011" />
+      <option name="presentableId" value="LOCAL‎00011" />
+      <updated>1607620162007</updated>
+    </task>
+    <task id="LOCAL‎00012" summary="Computer{} class DONE">
+      <created>1608222056548</created>
+      <option name="number" value="LOCAL‎00012" />
+      <option name="presentableId" value="LOCAL‎00012" />
+      <updated>1608222056548</updated>
+    </task>
+    <task id="LOCAL‎00013" summary="Added InteractiveShell.py for Representation on Thursday">
+      <created>1608679199809</created>
+      <option name="number" value="LOCAL‎00013" />
+      <option name="presentableId" value="LOCAL‎00013" />
+      <updated>1608679199809</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Translated functions for RSA encryption" />
+    <MESSAGE value="RSA{} class DONE" />
+    <MESSAGE value="HttpRequest{} class DONE" />
+    <MESSAGE value="HTML rendering according to user agent" />
+    <MESSAGE value="current" />
+    <MESSAGE value="RuntimeDatabase DONE" />
+    <MESSAGE value="basic shell with clients DONE" />
+    <MESSAGE value="Simple HTTP Shell DONE" />
+    <MESSAGE value="Simple HTTP Reverse Shell" />
+    <MESSAGE value="Computer{} class DONE" />
+    <MESSAGE value="Added InteractiveShell.py for Representation on Thursday" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added InteractiveShell.py for Representation on Thursday" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607437920132">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1607437920132" />
+    <state width="1899" height="389" key="GridCell.Tab.0.bottom" timestamp="1608823562176">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1419" height="162" key="GridCell.Tab.0.bottom/0.0.1920.1160/-1440.300.1440.860@-1440.300.1440.860" timestamp="1607618414407" />
+    <state width="1899" height="389" key="GridCell.Tab.0.bottom/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1608823562176" />
+    <state width="1899" height="389" key="GridCell.Tab.0.center" timestamp="1608823562175">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1419" height="162" key="GridCell.Tab.0.center/0.0.1920.1160/-1440.300.1440.860@-1440.300.1440.860" timestamp="1607618414407" />
+    <state width="1899" height="389" key="GridCell.Tab.0.center/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1608823562175" />
+    <state width="1899" height="389" key="GridCell.Tab.0.left" timestamp="1608823562175">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1419" height="162" key="GridCell.Tab.0.left/0.0.1920.1160/-1440.300.1440.860@-1440.300.1440.860" timestamp="1607618414407" />
+    <state width="1899" height="389" key="GridCell.Tab.0.left/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1608823562175" />
+    <state width="1899" height="389" key="GridCell.Tab.0.right" timestamp="1608823562175">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1419" height="162" key="GridCell.Tab.0.right/0.0.1920.1160/-1440.300.1440.860@-1440.300.1440.860" timestamp="1607618414407" />
+    <state width="1899" height="389" key="GridCell.Tab.0.right/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1608823562175" />
+    <state x="922" y="228" key="SettingsEditor" timestamp="1607011181967">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="922" y="228" key="SettingsEditor/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1607011181967" />
+    <state x="416" y="202" key="Vcs.Push.Dialog.v2" timestamp="1608679201753">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="-1128" y="450" key="Vcs.Push.Dialog.v2/0.0.1920.1160/-1440.300.1440.860@-1440.300.1440.860" timestamp="1605827499649" />
+    <state x="416" y="202" key="Vcs.Push.Dialog.v2/0.0.1920.1160/-1440.300.1440.860@0.0.1920.1160" timestamp="1608679201753" />
+  </component>
+</project>
