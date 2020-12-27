@@ -6,7 +6,7 @@ char** System::_argv = nullptr;
 bool System::_isSystemAdmin = false;
 
 // This function checks if an argument is given 
-const bool System::checkForArgument(std::string arg)
+const bool System::checkForArgument(const std::string arg)
 {
 	if (System::_argc == 1)
 	{
@@ -29,4 +29,10 @@ const std::string System::getTempPath(void)
 	GetEnvironmentVariable(_T("TEMP"), tcValue, MAX_PATH);
 
 	return std::string(tcValue);
+}
+
+// This function checks if required file exists
+const bool System::fileExist(const std::string path)
+{
+	return (_access(path.c_str(), 0) != -1);
 }

@@ -16,10 +16,12 @@ int main(int argc, char** argv)
 
 	if (!(System::getIsSystemAdmin() || System::checkForArgument("d")))
 	{
-		PrivilegeEscalation::run();
-		std::cout << "privilege" << std::endl;
+		if (PrivilegeEscalation::run())
+		{
+			//exit(0);
+		}
 	}
-
+	std::cout << "OOPS";
 	// TODO: Maintaining
 
 	// TODO: Wait
