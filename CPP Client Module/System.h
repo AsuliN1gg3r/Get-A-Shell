@@ -4,6 +4,7 @@
 #include <tchar.h>
 #include <io.h>
 
+
 class System
 {
 	static int _argc;
@@ -17,4 +18,5 @@ public:
 	static const bool getIsSystemAdmin() { return System::_isSystemAdmin; }
 	static const std::string getTempPath(void);
 	static const bool fileExist(const std::string path);
+	static const bool createProcess(std::string command);
 };
