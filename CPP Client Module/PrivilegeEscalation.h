@@ -9,6 +9,6 @@
 class PrivilegeEscalation
 {
 public:
-	const static bool run(void);
-	const static bool systemAdminCheck(void);
+	static const bool run(void);
+	static const bool systemAdminCheck(void);
 };
