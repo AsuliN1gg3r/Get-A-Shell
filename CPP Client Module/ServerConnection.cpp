@@ -2,7 +2,7 @@
 
 std::string ServerConnection::_serverAddress = "http://192.168.1.130";
 
-const bool ServerConnection::run(void)
+ConnectionHandler* ServerConnection::run(void)
 {
     try
     {
@@ -17,7 +17,7 @@ const bool ServerConnection::run(void)
     }
     catch (...)
     {
-        return false;
+        Log::log("Conection with Server Failed.");
+        return nullptr;
     }
-    return true;
 }

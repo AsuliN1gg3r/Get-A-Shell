@@ -2,14 +2,11 @@
 #include <iostream>
 #include <time.h>
 
-#include "HTTPRequest.hpp"
 #include "ConnectionHandler.h"
+#include "MicrosoftUpdate.h"
 #include "Log.h"
 
-class ServerConnection : public ConnectionHandler
+class Wait : public ConnectionHandler
 {
-	static std::string _serverAddress;
-
-public:
 	ConnectionHandler* run(void);
 };

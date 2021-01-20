@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="main.cpp">
       <SubType>
       </SubType>
@@ -147,14 +148,19 @@
     <ClCompile Include="PrivilegeEscalation.cpp" />
     <ClCompile Include="ServerConnection.cpp" />
     <ClCompile Include="System.cpp" />
+    <ClCompile Include="Wait.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommandLine.h" />
+    <ClInclude Include="ConnectionHandler.h" />
     <ClInclude Include="HTTPRequest.hpp" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Maintaining.h" />
     <ClInclude Include="MicrosoftUpdate.h" />
     <ClInclude Include="PrivilegeEscalation.h" />
     <ClInclude Include="ServerConnection.h" />
     <ClInclude Include="System.h" />
+    <ClInclude Include="Wait.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
