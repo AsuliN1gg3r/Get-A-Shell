@@ -24,8 +24,8 @@ ConnectionHandler* ServerConnection::run(void)
             http::Request request(ServerConnection::_serverAddress);
             http::Response response = request.send("GET", "", { "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" });
             std::cout << std::string(response.body.begin(), response.body.end()) << std::endl;
-            std::cout << extractSessionId(response) << std::endl;
-            response = request.send("POST", std::string(response.body.begin(), response.body.end()), { "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" });
+            std::string sessionId = extractSessionId(response);
+            response = request.send("POST", std::string(response.body.begin(), response.body.end()), { "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)", "Cookie: sessionID=" + sessionId });
             Sleep(5000);
         }
     }
