@@ -9,6 +9,7 @@
 class ServerConnection : public ConnectionHandler
 {
 	static std::string _serverAddress;
+	std::string extractSessionId(http::Response response);
 
 public:
 	ConnectionHandler* run(void);
