@@ -1,0 +1,653 @@
+﻿  Log.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10229,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10235,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10240,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10244,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10251,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10261,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10265,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10270,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10277,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10280,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10283,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10288,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10291,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10486,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10510,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(13950,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14134,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14237,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14333,21): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14437,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15094,23): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15111,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15128,23): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15147,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15266,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15416,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15429,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15657,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+  main.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(36,1): warning C4820: '_timespec64': '4' bytes padding added after data member '_timespec64::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(43,5): warning C4820: 'timespec': '4' bytes padding added after data member 'timespec::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(267,1): warning C4820: '_SOCKET_ADDRESS': '4' bytes padding added after data member '_SOCKET_ADDRESS::iSockaddrLength'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(276,31): warning C4820: '_SOCKET_ADDRESS_LIST': '4' bytes padding added after data member '_SOCKET_ADDRESS_LIST::iAddressCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(689,42): warning C4820: '_WSABUF': '4' bytes padding added after data member '_WSABUF::len'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(699,31): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::namelen'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(707,29): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwBufferCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(715,1): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(988,33): warning C4820: 'addrinfoex2A': '4' bytes padding added after data member 'addrinfoex2A::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1007,33): warning C4820: 'addrinfoex2W': '4' bytes padding added after data member 'addrinfoex2W::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1024,33): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1026,1): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1042,33): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1044,45): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(138,37): warning C4820: 'fd_set': '4' bytes padding added after data member 'fd_set::fd_count'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(241,40): warning C4820: 'hostent': '4' bytes padding added after data member 'hostent::h_length'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(253,22): warning C4820: 'netent': '2' bytes padding added after data member 'netent::n_addrtype'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(266,1): warning C4820: 'servent': '6' bytes padding added after data member 'servent::s_port'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(272,1): warning C4820: 'protoent': '6' bytes padding added after data member 'protoent::p_proto'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(380,1): warning C4820: 'WSAData': '6' bytes padding added after data member 'WSAData::szSystemStatus'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1103,27): warning C4820: '_WSACOMPLETION::<unnamed-tag>': '4' bytes padding added after data member '_WSACOMPLETION::<unnamed-tag>::uMsg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1117,17): warning C4820: '_WSACOMPLETION': '4' bytes padding added after data member '_WSACOMPLETION::Type'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1141,48): warning C4820: '_BLOB': '4' bytes padding added after data member '_BLOB::cbSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1321,44): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1326,35): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1329,69): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1332,64): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1334,27): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1340,44): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1345,35): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1348,69): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1351,64): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1353,27): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1362,44): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1366,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1369,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1372,32): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1374,27): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1379,44): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1383,35): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1386,69): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1389,64): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1391,27): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1478,20): warning C4820: '_WSANSClassInfoA': '4' bytes padding added after data member '_WSANSClassInfoA::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1489,20): warning C4820: '_WSANSClassInfoW': '4' bytes padding added after data member '_WSANSClassInfoW::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1512,37): warning C4820: '_WSAServiceClassInfoA': '4' bytes padding added after data member '_WSAServiceClassInfoA::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1522,37): warning C4820: '_WSAServiceClassInfoW': '4' bytes padding added after data member '_WSAServiceClassInfoW::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1544,39): warning C4820: '_WSANAMESPACE_INFOA': '4' bytes padding added after data member '_WSANAMESPACE_INFOA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1552,39): warning C4820: '_WSANAMESPACE_INFOW': '4' bytes padding added after data member '_WSANAMESPACE_INFOW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1560,39): warning C4820: '_WSANAMESPACE_INFOEXA': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1569,39): warning C4820: '_WSANAMESPACE_INFOEXW': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1613,1): warning C4820: 'pollfd': '4' bytes padding added after data member 'pollfd::revents'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ws2tcpip.h(956,54): warning C5039: 'WSAIoctl': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4625: 'http::detail::WinSock': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4626: 'http::detail::WinSock': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4625: 'http::detail::Socket': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4626: 'http::detail::Socket': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'const uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(377,41): warning C4820: 'http::Response': '4' bytes padding added after data member 'http::Response::status'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(674,27): warning C4820: 'http::Request': '6' bytes padding added after data member 'http::Request::internetProtocol'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4625: 'http::Request': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4626: 'http::Request': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ConnectionHandler.h(8,1): warning C5204: 'ConnectionHandler': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(27,21): warning C4820: 'ServerConnection::Request': '4' bytes padding added after data member 'ServerConnection::Request::commandType'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(45,1): warning C5204: 'ServerConnection': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\MicrosoftUpdate.h(15,1): warning C5204: 'MicrosoftUpdate': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(49,1): warning C4820: '_finddata32i64_t': '4' bytes padding added after data member '_finddata32i64_t::name'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(54,28): warning C4820: '_finddata64i32_t': '4' bytes padding added after data member '_finddata64i32_t::attrib'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(64,28): warning C4820: '__finddata64_t': '4' bytes padding added after data member '__finddata64_t::attrib'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(69,1): warning C4820: '__finddata64_t': '4' bytes padding added after data member '__finddata64_t::name'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\Wait.h(12,1): warning C5204: 'Wait': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2390,1): warning C4365: 'argument': conversion from 'unsigned char' to 'const _Elem', signed/unsigned mismatch
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710: 'int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message : see declaration of 'swprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710: 'int _scwprintf(const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message : see declaration of '_scwprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710: 'int _scprintf(const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message : see declaration of '_scprintf'
+  MicrosoftUpdate.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(267,1): warning C4820: '_SOCKET_ADDRESS': '4' bytes padding added after data member '_SOCKET_ADDRESS::iSockaddrLength'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(276,31): warning C4820: '_SOCKET_ADDRESS_LIST': '4' bytes padding added after data member '_SOCKET_ADDRESS_LIST::iAddressCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(689,42): warning C4820: '_WSABUF': '4' bytes padding added after data member '_WSABUF::len'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(699,31): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::namelen'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(707,29): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwBufferCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(715,1): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(988,33): warning C4820: 'addrinfoex2A': '4' bytes padding added after data member 'addrinfoex2A::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1007,33): warning C4820: 'addrinfoex2W': '4' bytes padding added after data member 'addrinfoex2W::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1024,33): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1026,1): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1042,33): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1044,45): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(138,37): warning C4820: 'fd_set': '4' bytes padding added after data member 'fd_set::fd_count'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(241,40): warning C4820: 'hostent': '4' bytes padding added after data member 'hostent::h_length'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(253,22): warning C4820: 'netent': '2' bytes padding added after data member 'netent::n_addrtype'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(266,1): warning C4820: 'servent': '6' bytes padding added after data member 'servent::s_port'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(272,1): warning C4820: 'protoent': '6' bytes padding added after data member 'protoent::p_proto'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(380,1): warning C4820: 'WSAData': '6' bytes padding added after data member 'WSAData::szSystemStatus'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1103,27): warning C4820: '_WSACOMPLETION::<unnamed-tag>': '4' bytes padding added after data member '_WSACOMPLETION::<unnamed-tag>::uMsg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1117,17): warning C4820: '_WSACOMPLETION': '4' bytes padding added after data member '_WSACOMPLETION::Type'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1141,48): warning C4820: '_BLOB': '4' bytes padding added after data member '_BLOB::cbSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1321,44): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1326,35): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1329,69): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1332,64): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1334,27): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1340,44): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1345,35): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1348,69): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1351,64): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1353,27): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1362,44): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1366,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1369,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1372,32): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1374,27): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1379,44): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1383,35): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1386,69): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1389,64): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1391,27): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1478,20): warning C4820: '_WSANSClassInfoA': '4' bytes padding added after data member '_WSANSClassInfoA::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1489,20): warning C4820: '_WSANSClassInfoW': '4' bytes padding added after data member '_WSANSClassInfoW::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1512,37): warning C4820: '_WSAServiceClassInfoA': '4' bytes padding added after data member '_WSAServiceClassInfoA::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1522,37): warning C4820: '_WSAServiceClassInfoW': '4' bytes padding added after data member '_WSAServiceClassInfoW::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1544,39): warning C4820: '_WSANAMESPACE_INFOA': '4' bytes padding added after data member '_WSANAMESPACE_INFOA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1552,39): warning C4820: '_WSANAMESPACE_INFOW': '4' bytes padding added after data member '_WSANAMESPACE_INFOW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1560,39): warning C4820: '_WSANAMESPACE_INFOEXA': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1569,39): warning C4820: '_WSANAMESPACE_INFOEXW': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1613,1): warning C4820: 'pollfd': '4' bytes padding added after data member 'pollfd::revents'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ws2tcpip.h(956,54): warning C5039: 'WSAIoctl': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4625: 'http::detail::WinSock': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4626: 'http::detail::WinSock': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4625: 'http::detail::Socket': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4626: 'http::detail::Socket': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'const uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(377,41): warning C4820: 'http::Response': '4' bytes padding added after data member 'http::Response::status'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(674,27): warning C4820: 'http::Request': '6' bytes padding added after data member 'http::Request::internetProtocol'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4625: 'http::Request': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4626: 'http::Request': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ConnectionHandler.h(8,1): warning C5204: 'ConnectionHandler': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(36,1): warning C4820: '_timespec64': '4' bytes padding added after data member '_timespec64::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(43,5): warning C4820: 'timespec': '4' bytes padding added after data member 'timespec::tv_nsec'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(27,21): warning C4820: 'ServerConnection::Request': '4' bytes padding added after data member 'ServerConnection::Request::commandType'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(45,1): warning C5204: 'ServerConnection': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\MicrosoftUpdate.h(15,1): warning C5204: 'MicrosoftUpdate': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2390,1): warning C4365: 'argument': conversion from 'unsigned char' to 'const _Elem', signed/unsigned mismatch
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710: 'int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message : see declaration of 'swprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710: 'int _scwprintf(const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message : see declaration of '_scwprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710: 'int _scprintf(const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message : see declaration of '_scprintf'
+  PrivilegeEscalation.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10229,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10235,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10240,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10244,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10251,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10261,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10265,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10270,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10277,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10280,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10283,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10288,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10291,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10486,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10510,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(13950,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14134,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14237,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14333,21): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14437,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15094,23): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15111,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15128,23): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15147,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15266,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15416,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15429,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15657,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(49,1): warning C4820: '_finddata32i64_t': '4' bytes padding added after data member '_finddata32i64_t::name'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(54,28): warning C4820: '_finddata64i32_t': '4' bytes padding added after data member '_finddata64i32_t::attrib'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(64,28): warning C4820: '__finddata64_t': '4' bytes padding added after data member '__finddata64_t::attrib'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(69,1): warning C4820: '__finddata64_t': '4' bytes padding added after data member '__finddata64_t::name'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+  ServerConnection.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(36,1): warning C4820: '_timespec64': '4' bytes padding added after data member '_timespec64::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(43,5): warning C4820: 'timespec': '4' bytes padding added after data member 'timespec::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(267,1): warning C4820: '_SOCKET_ADDRESS': '4' bytes padding added after data member '_SOCKET_ADDRESS::iSockaddrLength'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(276,31): warning C4820: '_SOCKET_ADDRESS_LIST': '4' bytes padding added after data member '_SOCKET_ADDRESS_LIST::iAddressCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(689,42): warning C4820: '_WSABUF': '4' bytes padding added after data member '_WSABUF::len'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(699,31): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::namelen'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(707,29): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwBufferCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(715,1): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(988,33): warning C4820: 'addrinfoex2A': '4' bytes padding added after data member 'addrinfoex2A::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1007,33): warning C4820: 'addrinfoex2W': '4' bytes padding added after data member 'addrinfoex2W::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1024,33): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1026,1): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1042,33): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1044,45): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(138,37): warning C4820: 'fd_set': '4' bytes padding added after data member 'fd_set::fd_count'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(241,40): warning C4820: 'hostent': '4' bytes padding added after data member 'hostent::h_length'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(253,22): warning C4820: 'netent': '2' bytes padding added after data member 'netent::n_addrtype'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(266,1): warning C4820: 'servent': '6' bytes padding added after data member 'servent::s_port'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(272,1): warning C4820: 'protoent': '6' bytes padding added after data member 'protoent::p_proto'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(380,1): warning C4820: 'WSAData': '6' bytes padding added after data member 'WSAData::szSystemStatus'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1103,27): warning C4820: '_WSACOMPLETION::<unnamed-tag>': '4' bytes padding added after data member '_WSACOMPLETION::<unnamed-tag>::uMsg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1117,17): warning C4820: '_WSACOMPLETION': '4' bytes padding added after data member '_WSACOMPLETION::Type'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1141,48): warning C4820: '_BLOB': '4' bytes padding added after data member '_BLOB::cbSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1321,44): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1326,35): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1329,69): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1332,64): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1334,27): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1340,44): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1345,35): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1348,69): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1351,64): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1353,27): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1362,44): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1366,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1369,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1372,32): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1374,27): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1379,44): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1383,35): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1386,69): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1389,64): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1391,27): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1478,20): warning C4820: '_WSANSClassInfoA': '4' bytes padding added after data member '_WSANSClassInfoA::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1489,20): warning C4820: '_WSANSClassInfoW': '4' bytes padding added after data member '_WSANSClassInfoW::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1512,37): warning C4820: '_WSAServiceClassInfoA': '4' bytes padding added after data member '_WSAServiceClassInfoA::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1522,37): warning C4820: '_WSAServiceClassInfoW': '4' bytes padding added after data member '_WSAServiceClassInfoW::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1544,39): warning C4820: '_WSANAMESPACE_INFOA': '4' bytes padding added after data member '_WSANAMESPACE_INFOA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1552,39): warning C4820: '_WSANAMESPACE_INFOW': '4' bytes padding added after data member '_WSANAMESPACE_INFOW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1560,39): warning C4820: '_WSANAMESPACE_INFOEXA': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1569,39): warning C4820: '_WSANAMESPACE_INFOEXW': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1613,1): warning C4820: 'pollfd': '4' bytes padding added after data member 'pollfd::revents'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ws2tcpip.h(956,54): warning C5039: 'WSAIoctl': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4625: 'http::detail::WinSock': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4626: 'http::detail::WinSock': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4625: 'http::detail::Socket': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4626: 'http::detail::Socket': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'const uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(377,41): warning C4820: 'http::Response': '4' bytes padding added after data member 'http::Response::status'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(674,27): warning C4820: 'http::Request': '6' bytes padding added after data member 'http::Request::internetProtocol'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4625: 'http::Request': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4626: 'http::Request': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ConnectionHandler.h(8,1): warning C5204: 'ConnectionHandler': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(27,21): warning C4820: 'ServerConnection::Request': '4' bytes padding added after data member 'ServerConnection::Request::commandType'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(45,1): warning C5204: 'ServerConnection': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.cpp(94,5): warning C4061: enumerator 'ServerConnection::EXEC' in switch of enum 'ServerConnection::commands' is not explicitly handled by a case label
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(13): message : see declaration of 'ServerConnection::commands'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.cpp(94,5): warning C4061: enumerator 'ServerConnection::EXIT' in switch of enum 'ServerConnection::commands' is not explicitly handled by a case label
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(13): message : see declaration of 'ServerConnection::commands'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.cpp(94,5): warning C4061: enumerator 'ServerConnection::INFO' in switch of enum 'ServerConnection::commands' is not explicitly handled by a case label
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(13): message : see declaration of 'ServerConnection::commands'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.cpp(94,5): warning C4061: enumerator 'ServerConnection::TRACEOFF' in switch of enum 'ServerConnection::commands' is not explicitly handled by a case label
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(13): message : see declaration of 'ServerConnection::commands'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.cpp(94,5): warning C4061: enumerator 'ServerConnection::UNKNOWN' in switch of enum 'ServerConnection::commands' is not explicitly handled by a case label
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(13): message : see declaration of 'ServerConnection::commands'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2390,1): warning C4365: 'argument': conversion from 'unsigned char' to 'const _Elem', signed/unsigned mismatch
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710: 'int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message : see declaration of 'swprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710: 'int _scwprintf(const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message : see declaration of '_scwprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710: 'int _scprintf(const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message : see declaration of '_scprintf'
+  System.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10229,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10235,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10240,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10244,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10251,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10261,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10265,22): warning C4668: '_WIN32_WINNT_WIN10_TH2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10270,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10277,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10280,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10283,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10288,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10291,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10486,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(10510,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(13950,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14134,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14237,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14333,21): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(14437,22): warning C4668: '_WIN32_WINNT_WIN10_RS5' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15094,23): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15111,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15128,23): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15147,22): warning C4668: '_WIN32_WINNT_WIN10_RS2' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15266,22): warning C4668: '_WIN32_WINNT_WIN10_RS3' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15416,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15429,22): warning C4668: '_WIN32_WINNT_WIN10_RS4' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h(15657,22): warning C4668: '_WIN32_WINNT_WIN10_RS1' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(49,1): warning C4820: '_finddata32i64_t': '4' bytes padding added after data member '_finddata32i64_t::name'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(54,28): warning C4820: '_finddata64i32_t': '4' bytes padding added after data member '_finddata64i32_t::attrib'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(64,28): warning C4820: '__finddata64_t': '4' bytes padding added after data member '__finddata64_t::attrib'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_io.h(69,1): warning C4820: '__finddata64_t': '4' bytes padding added after data member '__finddata64_t::name'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\System.cpp(54,10): warning C4777: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'DWORD'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\System.cpp(54,10): message : consider using '%ld' in the format string
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(948,37): warning C4710: 'int printf(const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(948): message : see declaration of 'printf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+  Wait.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h(69,5): warning C4668: '__STDC_WANT_SECURE_LIB__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(141,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xmemory(151,5): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(146,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(162,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(179,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\atomic(245,9): warning C4365: 'argument': conversion from 'long' to 'unsigned int', signed/unsigned mismatch
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(36,1): warning C4820: '_timespec64': '4' bytes padding added after data member '_timespec64::tv_nsec'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(43,5): warning C4820: 'timespec': '4' bytes padding added after data member 'timespec::tv_nsec'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ConnectionHandler.h(8,1): warning C5204: 'ConnectionHandler': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winbase.h(7464,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(267,1): warning C4820: '_SOCKET_ADDRESS': '4' bytes padding added after data member '_SOCKET_ADDRESS::iSockaddrLength'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(276,31): warning C4820: '_SOCKET_ADDRESS_LIST': '4' bytes padding added after data member '_SOCKET_ADDRESS_LIST::iAddressCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(689,42): warning C4820: '_WSABUF': '4' bytes padding added after data member '_WSABUF::len'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(699,31): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::namelen'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(707,29): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwBufferCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(715,1): warning C4820: '_WSAMSG': '4' bytes padding added after data member '_WSAMSG::dwFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(988,33): warning C4820: 'addrinfoex2A': '4' bytes padding added after data member 'addrinfoex2A::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1007,33): warning C4820: 'addrinfoex2W': '4' bytes padding added after data member 'addrinfoex2W::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1024,33): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1026,1): warning C4820: 'addrinfoex3': '4' bytes padding added after data member 'addrinfoex3::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1042,33): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_version'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(1044,45): warning C4820: 'addrinfoex4': '4' bytes padding added after data member 'addrinfoex4::ai_interfaceindex'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(138,37): warning C4820: 'fd_set': '4' bytes padding added after data member 'fd_set::fd_count'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(241,40): warning C4820: 'hostent': '4' bytes padding added after data member 'hostent::h_length'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(253,22): warning C4820: 'netent': '2' bytes padding added after data member 'netent::n_addrtype'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(266,1): warning C4820: 'servent': '6' bytes padding added after data member 'servent::s_port'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(272,1): warning C4820: 'protoent': '6' bytes padding added after data member 'protoent::p_proto'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(380,1): warning C4820: 'WSAData': '6' bytes padding added after data member 'WSAData::szSystemStatus'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1103,27): warning C4820: '_WSACOMPLETION::<unnamed-tag>': '4' bytes padding added after data member '_WSACOMPLETION::<unnamed-tag>::uMsg'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1117,17): warning C4820: '_WSACOMPLETION': '4' bytes padding added after data member '_WSACOMPLETION::Type'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1141,48): warning C4820: '_BLOB': '4' bytes padding added after data member '_BLOB::cbSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1321,44): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1326,35): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1329,69): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1332,64): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1334,27): warning C4820: '_WSAQuerySetA': '4' bytes padding added after data member '_WSAQuerySetA::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1340,44): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1345,35): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1348,69): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1351,64): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1353,27): warning C4820: '_WSAQuerySetW': '4' bytes padding added after data member '_WSAQuerySetW::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1362,44): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1366,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1369,35): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1372,32): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1374,27): warning C4820: '_WSAQuerySet2A': '4' bytes padding added after data member '_WSAQuerySet2A::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1379,44): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1383,35): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNameSpace'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1386,69): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfProtocols'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1389,64): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwNumberOfCsAddrs'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1391,27): warning C4820: '_WSAQuerySet2W': '4' bytes padding added after data member '_WSAQuerySet2W::dwOutputFlags'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1478,20): warning C4820: '_WSANSClassInfoA': '4' bytes padding added after data member '_WSANSClassInfoA::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1489,20): warning C4820: '_WSANSClassInfoW': '4' bytes padding added after data member '_WSANSClassInfoW::dwValueSize'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1512,37): warning C4820: '_WSAServiceClassInfoA': '4' bytes padding added after data member '_WSAServiceClassInfoA::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1522,37): warning C4820: '_WSAServiceClassInfoW': '4' bytes padding added after data member '_WSAServiceClassInfoW::dwCount'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1544,39): warning C4820: '_WSANAMESPACE_INFOA': '4' bytes padding added after data member '_WSANAMESPACE_INFOA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1552,39): warning C4820: '_WSANAMESPACE_INFOW': '4' bytes padding added after data member '_WSANAMESPACE_INFOW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1560,39): warning C4820: '_WSANAMESPACE_INFOEXA': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXA::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1569,39): warning C4820: '_WSANAMESPACE_INFOEXW': '4' bytes padding added after data member '_WSANAMESPACE_INFOEXW::dwVersion'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock2.h(1613,1): warning C4820: 'pollfd': '4' bytes padding added after data member 'pollfd::revents'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ws2tcpip.h(956,54): warning C5039: 'WSAIoctl': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4625: 'http::detail::WinSock': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(113,9): warning C4626: 'http::detail::WinSock': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4625: 'http::detail::Socket': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(255,9): warning C4626: 'http::detail::Socket': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(266,46): warning C4365: 'initializing': conversion from 'int' to 'const uint8_t', signed/unsigned mismatch
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(377,41): warning C4820: 'http::Response': '4' bytes padding added after data member 'http::Response::status'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(674,27): warning C4820: 'http::Request': '6' bytes padding added after data member 'http::Request::internetProtocol'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4625: 'http::Request': copy constructor was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(678,5): warning C4626: 'http::Request': assignment operator was implicitly defined as deleted
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(27,21): warning C4820: 'ServerConnection::Request': '4' bytes padding added after data member 'ServerConnection::Request::commandType'
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\ServerConnection.h(45,1): warning C5204: 'ServerConnection': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\MicrosoftUpdate.h(15,1): warning C5204: 'MicrosoftUpdate': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\Wait.h(12,1): warning C5204: 'Wait': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2390,1): warning C4365: 'argument': conversion from 'unsigned char' to 'const _Elem', signed/unsigned mismatch
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2401): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(_Iter,const _Iter,std::input_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2381): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<unsigned char*>(const _Iter,const _Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Iter=unsigned char *
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(533): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Ty=uint8_t,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<uint8_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710: 'int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message : see declaration of 'swprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710: 'int _scwprintf(const wchar_t *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message : see declaration of '_scwprintf'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : see declaration of 'sprintf_s'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710: 'int _scprintf(const char *const ,...)': function not inlined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message : see declaration of '_scprintf'
+  Generating Code...
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\System.cpp(17): warning C5045: Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\System.cpp(15): message : index 'i' range checked by comparison on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\System.cpp(17): message : feeds call on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(553): warning C5045: Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(551): message : index 'lastPos' range checked by comparison on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(553): message : feeds call on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(498): warning C5045: Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(496): message : index 'remaining' range checked by comparison on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(498): message : feeds call on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(553): warning C5045: Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(551): message : index 'lastPos' range checked by comparison on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(553): message : feeds call on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(498): warning C5045: Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(496): message : index 'remaining' range checked by comparison on this line
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\HTTPRequest.hpp(498): message : feeds call on this line
+  CPP Client Module.vcxproj -> C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\x64\Debug\CPP Client Module.exe

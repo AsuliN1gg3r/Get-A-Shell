@@ -1,0 +1,2 @@
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\x64\Debug\CPP Client Module.exe
+C:\Users\Eyal Asulin\Desktop\betshemesh-607-get-a-shell\CPP Client Module\x64\Debug\CPP Client Module.pdb

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+    {% block content %}
+
+    <link rel="stylesheet" type="text/css" href="../static/styles/auth.css">
+    <title>Login</title>
+
+    <img src="../static/resources/logo.png" class="logo"/>
+    <main>
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post">
+                <input type="text" name="email-input" placeholder="Email" required="required"/>
+                <input type="password" name="password-input" placeholder="Password" required="required" />
+                
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="notification">
+                    {{ messages[0] }}
+                    </div>
+                {% endif %}
+                {% endwith %}
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+            </form>
+        </div>
+    </main>
+
+    {% endblock %}
