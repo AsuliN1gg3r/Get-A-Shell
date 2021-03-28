@@ -1,0 +1,28 @@
+{% extends "main_base.html" %}
+    {% block content %}
+
+
+    <title>Computers</title>
+
+    <div class="content">
+        <header>
+            <h1>Computers</h1>
+            <p>
+                <span class="dot" style="background-color: green;"></span> --> Active
+                <span class="dot" style="background-color: red;"></span> --> Inactive
+            </p>
+        </header>
+
+        <main>
+            <ul class="computers">
+                {% for computer in computers %}
+                <li class="computer">
+                    <a href="computer?id={{ computer.id }}"> <span class="dot" style="background-color: {% if computer.active %} green {% else %} red {% endif %};"></span> {{ computer.ip }} ~
+                        {{ computer.name }} ~ <span class="computer-id"> {{ computer.id }} </span></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </main>
+    </div>
+
+    {% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/dashboard.css">
+    <!--favicon for different platforms-->
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/resources/favicon-16x16.png">
+    <link rel="manifest" href="../static/resources/site.webmanifest">
+    <link rel="mask-icon" href="../static/resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="theme-color" content="#333333">
+    <meta charset="UTF-8">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="startTime()">
+    <nav>
+        <ul class="nav">
+            <li class="nav-link"><img src="../static/resources/logo.png" class="logo"/></li>
+            <li class="nav-link"><a href="dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
+            <li class="nav-link"><a href="computers"><i class="fa fa-laptop" aria-hidden="true"></i> Computers</a></li>
+            <li class="nav-link"><a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Create New File</a></li>
+            <li class="nav-link"><a href="logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+            <li class="nav-link"><span id="datetime"></span></li>
+            <li class="creative-rights"><i class="fa fa-creative-commons" aria-hidden="true"> </i> Created by Eyal Asulin</li>
+        </ul>
+        
+        <script>
+          function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('datetime').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+          }
+
+          function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+          }
+
+        </script>
+    </nav>
+
+    
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends "main_base.html" %}
+    {% block content %}
+
+    <title>Dashboard</title>
+
+    <main class="content">
+        <header class="heading">
+            <h1>Dashboard</h1>
+        </header>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Hey {{ name }},</h3>
+                <h4 style="margin-top: -20px;">it's great to see you again!</h4>
+                <img src="../static/resources/user-icon.webp" class="logo"/>
+            </div>
+
+            <div class="card">
+                <h3>Overall Computers</h3>
+                <h1 class="count-num">{{ count[0] }}</h1>
+            </div>
+
+            <div class="card">
+                <h3>Activated Computers</h3>
+                <h1 class="count-num"> {{ count[1] }} </h1>
+            </div>
+
+        </div>
+    </main>
+
+    {% endblock %}
