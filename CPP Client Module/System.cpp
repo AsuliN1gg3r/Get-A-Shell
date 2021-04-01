@@ -22,15 +22,6 @@ const bool System::checkForArgument(const std::string arg)
     return false;
 }
 
-// This function returns the required environment variable value
-const std::string System::getTempPath(void)
-{
-	TCHAR tcValue[MAX_PATH];
-	GetEnvironmentVariable(_T("TEMP"), tcValue, MAX_PATH);
-
-	return std::string(tcValue);
-}
-
 // This function checks if required file exists
 const bool System::fileExist(const std::string path)
 {
@@ -59,4 +50,11 @@ const bool System::createProcess(std::string command)
 	CloseHandle(pi.hThread);
 
 	return true;
+}
+
+const bool System::downloadFile(const std::wstring url, const std::wstring path)
+{
+	int code = URLDownloadToFile(NULL, url.c_str(), path.c_str(), 0, NULL);
+
+	return code == S_OK;
 }
