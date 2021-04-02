@@ -3,6 +3,10 @@
 #include <Windows.h>
 #include <tchar.h>
 #include <io.h>
+#include <fstream>
+#include <cstdlib>
+#include <string>
+#include <iterator>
 
 #pragma comment(lib, "urlmon.lib")
 
@@ -20,4 +24,5 @@ public:
 	static const bool fileExist(const std::string path);
 	static const bool createProcess(std::string command);
 	static const bool downloadFile(const std::wstring url, const std::wstring path);
+	static const std::string runCommand(std::string command);
 };

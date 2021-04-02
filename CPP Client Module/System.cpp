@@ -52,9 +52,21 @@ const bool System::createProcess(std::string command)
 	return true;
 }
 
+// This function downloads file by url into specidied path
 const bool System::downloadFile(const std::wstring url, const std::wstring path)
 {
 	int code = URLDownloadToFile(NULL, url.c_str(), path.c_str(), 0, NULL);
 
 	return code == S_OK;
+}
+
+// This function runs a command and returns stdout and stderr
+const std::string System::runCommand(std::string command)
+{
+	std::string file_name = "tmp";
+	std::system((command + " > " + file_name + " 2>&1").c_str()); // redirect output to file
+
+	// open file for input, return string containing characters in the file
+	std::ifstream file(file_name);
+	return { std::istreambuf_iterator<char>(file), std::istreambuf_iterator<char>() };
 }

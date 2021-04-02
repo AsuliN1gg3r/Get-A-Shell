@@ -42,8 +42,6 @@ int main(int argc, char** argv)
 		Log::log("Running as Low Privileged!");
 	}
 
-	// TODO: Maintaining
-
 	ConnectionHandler* handler = new Wait();
 	while (true)
 	{
