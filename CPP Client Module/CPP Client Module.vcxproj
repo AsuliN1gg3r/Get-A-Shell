@@ -151,11 +151,9 @@
     <ClCompile Include="Wait.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CommandLine.h" />
     <ClInclude Include="ConnectionHandler.h" />
     <ClInclude Include="HTTPRequest.hpp" />
     <ClInclude Include="Log.h" />
-    <ClInclude Include="Maintaining.h" />
     <ClInclude Include="MicrosoftUpdate.h" />
     <ClInclude Include="PrivilegeEscalation.h" />
     <ClInclude Include="ServerConnection.h" />

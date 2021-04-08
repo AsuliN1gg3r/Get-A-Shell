@@ -23,6 +23,8 @@ settings.socketio = SocketIO(app)
 
 @settings.socketio.on('message')
 def handleMessage(msg):
+    print(msg)
+    # TODO: execute from
     CMD =  subprocess.Popen(msg,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
     result = CMD.stdout.read()
     error = CMD.stderr.read()

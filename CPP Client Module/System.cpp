@@ -22,6 +22,16 @@ const bool System::checkForArgument(const std::string arg)
     return false;
 }
 
+// This function returns user's temp path
+std::string System::getTempPath()
+{
+	LPTSTR value;
+	value = (LPTSTR)malloc(255 * sizeof(TCHAR));
+	GetEnvironmentVariable(TEXT("temp"), value, 255);
+	std::wstring ws(value);
+	return std::string(ws.begin(), ws.end());
+}
+
 // This function checks if required file exists
 const bool System::fileExist(const std::string path)
 {
