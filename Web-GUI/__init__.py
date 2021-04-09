@@ -21,14 +21,26 @@ login_manager.init_app(app)
 settings.init()
 settings.socketio = SocketIO(app)
 
+from .models import Computer
+
 @settings.socketio.on('message')
 def handleMessage(msg):
-    print(msg)
-    # TODO: execute from
-    CMD =  subprocess.Popen(msg,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
-    result = CMD.stdout.read()
-    error = CMD.stderr.read()
-    send(result.decode() if error == b'' else error.decode())
+    # Extract computer id, operator and parameters from received message
+    computer_id, op_param = msg.split("*")
+    operator = op_param[0]
+    param = op_param[1:]
+
+    if (operator == 'c'):
+        # TODO: execute from real comnputer
+        CMD =  subprocess.Popen(param,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
+        result = CMD.stdout.read()
+        error = CMD.stderr.read()
+        send(result.decode(errors='ignore') if error == b'' else error.decode(errors='ignore'))
+    elif (operator == 'n'):
+        computer=Computer.query.filter_by(user_id=flask_login.current_user.id, id=int(computer_id)).first()
+        computer.name = param
+        db.session.commit()
+    
 
 from .models import User
 

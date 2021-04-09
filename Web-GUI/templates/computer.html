@@ -19,7 +19,7 @@
                 // Send to server
                 var socket = io.connect('http://127.0.0.1:5000');
                 socket.on('connect', function() {
-                    socket.send(command_value);
+                    socket.send("{{ computer.id }}" + "*c" + command_value);
                 });
                 
                 socket.on('message', function(msg) {
@@ -44,7 +44,7 @@
                 // Send to server
                 var socket = io.connect('http://127.0.0.1:5000');
                 socket.on('connect', function() {
-                    socket.send(computer_name);
+                    socket.send("{{ computer.id }}" + "*n" + computer_name);
                 });
             }
         
