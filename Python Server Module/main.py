@@ -2,8 +2,8 @@
 from Server import Server
 from InteractiveShell import InteractiveShell
 
-def main():
 
+def main():
     server = Server()
     server.run()
     InteractiveShell.start_shell()

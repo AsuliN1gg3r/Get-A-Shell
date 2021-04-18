@@ -38,7 +38,7 @@ int main(int argc, char** argv)
 		}
 	}
 	
-	// Enable Loggin to Screen (For Testing)
+	// Enable Logging to Screen (For Testing)
 	Log::setLogging(true);
 
 	System::setIsSystemAdmin(PrivilegeEscalation::systemAdminCheck());

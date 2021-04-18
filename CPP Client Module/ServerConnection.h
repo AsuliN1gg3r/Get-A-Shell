@@ -7,6 +7,9 @@
 #include "Log.h"
 #include "System.h"
 
+// Server Address Configuration
+#define SERVER_ADDRESS "127.0.0.1"
+
 
 class ServerConnection : public ConnectionHandler
 {

@@ -1,5 +1,5 @@
 //
-//  HTTPRequest
+//  HTTPRequest (CPR Library)
 //
 
 #ifndef HTTPREQUEST_HPP

@@ -1,6 +1,6 @@
 #include "ServerConnection.h"
 
-std::string ServerConnection::_serverAddress = "http://127.0.0.1";
+std::string ServerConnection::_serverAddress = SERVER_ADDRESS;
 
 // This function extract sessionID cookie from Set-Cookie header
 std::string ServerConnection::extractSessionId(http::Response request)

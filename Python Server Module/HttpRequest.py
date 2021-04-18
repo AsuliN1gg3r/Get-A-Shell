@@ -1,5 +1,4 @@
 import email
-import pprint
 from io import StringIO
 import os
 

@@ -1,4 +1,4 @@
-# Arabic Code Writing Style (Really Quick for Representation)
+# (Written Really Quick for Testing & Representation)
 import os
 from RuntimeDatabase import RuntimeDatabase
 import Handler
@@ -20,10 +20,6 @@ Enter a Command Number:
                 exec("InteractiveShell.command_" + command + "()")
             except Exception:
                 pass
-
-    @staticmethod
-    def log_to_shell(content):
-        print(content)
 
     @staticmethod
     def command_0():
