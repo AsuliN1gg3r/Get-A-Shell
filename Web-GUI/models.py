@@ -1,7 +1,7 @@
 import flask_login
 from . import db
 import sqlalchemy
-
+import settings
 
 class User(flask_login.UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)

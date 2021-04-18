@@ -10,6 +10,5 @@ class Server:
         self.__communicator = None
 
     def run(self):
-        print("aaa")
         self.__communicator = Communicator()
         threading.Thread(target=self.__communicator.listen).start()
