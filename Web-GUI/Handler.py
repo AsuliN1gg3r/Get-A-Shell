@@ -44,6 +44,7 @@ class Handler:
                 RuntimeDatabase.idle_connections[addr[0]] = Computer(addr[0], client_sock)
             RuntimeDatabase.idle_connections_lock.release()
 
+            # Handler.handle_execute_command(addr[0])  # For Testing
         if request.request_method == "POST":
             try:  # An other handler waiting for this request
                 session_id = request.request_headers['Cookie'].split("=")[1]
@@ -56,15 +57,26 @@ class Handler:
             client_sock.send(HttpResponse.generate_response(200, "").encode())
 
     @staticmethod
-    def handle_execute_command(ip_address, command):
+    def handle_cpr():
         """
-        This function executes a command on this ip address
-        :param ip_address: ip address
-        :param command: command for executing
-        :type ip_address: str
-        :return: Executed successfully
+        This function is check that client is alive and refresh the socket
+        :return: alive or closed
         :rtype: bool
         """
+        # TODO: It's require Computer Object and Database- next sprint
+        return True
+
+    @staticmethod
+    def handle_execute_command(ip_address):
+        """
+        This function executes command on this ip address
+        :param ip_address: ip address
+        :type ip_address: str
+        :return: None (Temporary)
+        """
+        if not Handler.handle_cpr():
+            return
+        command = input("Shell:" + ip_address + "> ")
         RuntimeDatabase.idle_connections_lock.acquire()
         client_socket = RuntimeDatabase.idle_connections[ip_address].sock
         RuntimeDatabase.idle_connections_lock.release()
@@ -74,16 +86,9 @@ class Handler:
         RuntimeDatabase.post_request_events_lock.acquire()
         RuntimeDatabase.post_request_events[cookie_value] = wait_event
         RuntimeDatabase.post_request_events_lock.release()
-        wait_event.wait(timeout=10)
-        if not wait_event.is_set():  # In case that connection lost with remote computer
-            print(ip_address, "disconnected")
-            RuntimeDatabase.idle_connections_lock.acquire()
-            del RuntimeDatabase.idle_connections[ip_address]
-            RuntimeDatabase.idle_connections_lock.release()
-            return False
+        wait_event.wait()
         RuntimeDatabase.post_request_events_lock.acquire()
         request = RuntimeDatabase.post_request_events[cookie_value]
         RuntimeDatabase.post_request_events.pop(cookie_value)
         RuntimeDatabase.post_request_events_lock.release()
         print(request.request_content)
-        return True

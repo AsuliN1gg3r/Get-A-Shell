@@ -17,3 +17,4 @@ class Computer(db.Model):
     ip = db.Column(db.String(15))
     name = db.Column(db.String(30))
     active = db.Column(db.Boolean)
+    info = db.Column(db.String(6000))

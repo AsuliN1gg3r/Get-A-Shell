@@ -3,9 +3,10 @@ import flask_sqlalchemy
 import flask_login
 from flask_socketio import SocketIO, send
 import sys
-sys.path.insert(1, 'C:\\Users\\Eyal Asulin\\Desktop\\betshemesh-607-get-a-shell\\Web-GUI')
+sys.path.insert(1, sys.path[0] + "\\Web-GUI")
 import settings
-import subprocess 
+import subprocess
+from Server import Server
 
 db = flask_sqlalchemy.SQLAlchemy()
 app = flask.Flask(__name__)
@@ -20,6 +21,8 @@ login_manager.init_app(app)
 
 settings.init()
 settings.socketio = SocketIO(app)
+server = Server()
+server.run()
 
 from .models import Computer
 
@@ -30,13 +33,13 @@ def handleMessage(msg):
     operator = op_param[0]
     param = op_param[1:]
 
-    if (operator == 'c'):
-        # TODO: execute from real comnputer
+    if (operator == 'c'):  # execute command
+        # TODO: execute from real computer
         CMD =  subprocess.Popen(param,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
         result = CMD.stdout.read()
         error = CMD.stderr.read()
         send(result.decode(errors='ignore') if error == b'' else error.decode(errors='ignore'))
-    elif (operator == 'n'):
+    elif (operator == 'n'):  # Computer Name configuration on database
         computer=Computer.query.filter_by(user_id=flask_login.current_user.id, id=int(computer_id)).first()
         computer.name = param
         db.session.commit()
