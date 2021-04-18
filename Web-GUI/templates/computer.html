@@ -1,0 +1,129 @@
+{% extends "main_base.html" %}
+    {% block content %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.0/socket.io.min.js"></script>
+        <script>
+            function execute_command()
+            {   
+                var command = document.getElementsByName("command-input")[0];
+                if (command.value.trim() == "")
+                    return;
+                var prompt = document.getElementsByName("prompt")[0];
+                var command_option = document.createElement("option");
+                var command_value = command.value
+                command_option.text = "> " + command_value;
+                command_option.className = "command-option"
+                prompt.add(command_option);
+                
+                
+                // Send to server
+                var socket = io.connect('http://127.0.0.1:5000');
+                socket.on('connect', function() {
+                    socket.send("{{ computer.id }}" + "*c" + command_value);
+                });
+                
+                socket.on('message', function(msg) {
+                    response_option = document.createElement("option");
+                    response_option.text = msg
+                    response_option.title = msg
+                    response_option.className = "response-option"
+                    response_option.disabled = true
+                    prompt.add(response_option);
+                });
+ 
+                command.value = ""
+            }
+
+            function apply_computer_name()
+            {   
+                var computer_name = document.getElementsByName("computer_name-input")[0].value;
+                console.log(computer_name);
+                if (computer_name.trim() == "")
+                    return;
+                
+                // Send to server
+                var socket = io.connect('http://127.0.0.1:5000');
+                socket.on('connect', function() {
+                    socket.send("{{ computer.id }}" + "*n" + computer_name);
+                });
+            }
+        
+        </script>
+
+        <script>
+            function openTab(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+        </script>
+
+        <title>Computer ~{{ computer.name }}~</title>
+
+        <div class="content">
+
+            <header>
+
+                <h1>{{ computer.ip }} ~{{ computer.name }}~</h1> 
+                <span class="dot" style="background-color: {% if computer.active %} green {% else %} red {% endif %};"></span>
+                {% if computer.active %} Active {% else %} Inactive {% endif %}
+                <hr>
+
+                <!--Tabs Navigator-->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'info')" id="default">Info</button>
+                    <button class="tablinks" onclick="openTab(event, 'console')" {% if not computer.active %} disabled="disabled" {% endif %}>Console</button>
+                    <button class="tablinks" onclick="openTab(event, 'config')">Config</button>
+                </div>
+
+            </header>
+
+            <main>
+
+                <!--Info Tab-->
+                <div id="info" class="tab-content">
+                    <h2>Info:</h2>
+                    <pre>
+    {{ computer.info }}
+                    </pre>
+                </div>
+
+                <!--Console Tab-->
+                <div id="console" class="tab-content">
+                    <h2>Console:</h2>
+                    <select name="prompt" id="prompt" Size="20"></select>  
+                    <br>
+                    <input type="text" name="command-input" class="textbox" id="command" placeholder="Command" />
+                    <button id="execute" onclick="execute_command()">Execute</button>
+                </div>
+
+                <!--Config Tab-->
+                <div id="config" class="tab-content">
+                    <h2>Config:</h2>
+                    <label>Computer Name:</label>
+                    <input type="text" name="computer_name-input" class="textbox" id="computer_name" value="{{ computer.name }}"/>
+                    <button onclick="apply_computer_name()">Apply</button>
+                </div>
+
+            </main>
+
+        </div>
+
+        <script>document.getElementById("default").click();</script>
+
+    {% endblock %}
